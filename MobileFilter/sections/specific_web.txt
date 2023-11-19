@@ -96,7 +96,6 @@ news-postseven.com#?#.st-Block > div.st-Block_Inner + div[style]:has(> div[id^="
 doujin-freee.com##div[style="width: 100%; height: 0px; position: fixed; top: 0px; z-index: 2147483647;"]
 tempo.pt##.ad_m_bottom
 video.fc2.com##iframe[src^="/pagead/"]
-vogue.co.jp##div[class^="TwoColumnsWithHorizontalAdMosaicWrapper"]
 mainichikirei.jp##aside[style="width:100%; padding:10px 0; background:#f3f3f3;"]
 bg-mania.jp##div[style="min-height:120px; min-width:100%;"]
 full-count.jp###c2_click_jera_award_sp_article_end
@@ -129,10 +128,8 @@ www-timesofisrael-com.cdn.ampproject.org##.banner-placeholder
 gptoday.net##.top-banner-leaderboard
 gptoday.net##.ad-placeholder-wrapper
 gptoday.net###gptoday_ros_bravo_mobile
-hellosehat.com##.article-mobile-ad
 tuttotech.net##body #admputop2
 tuttotech.net#?#.grid-start > .align-self-center:has(> .banner)
-gptoday.net###gptoday_ros_bravo_mobile
 0352.ua#?#.row > div.card-wrapper:has(> amp-ad)
 root-nation.com###tdi_3
 root-nation.com###tdi_95
@@ -155,7 +152,6 @@ op.gg#?##__next > div[class^="css-"]:has(> div#vm-av)
 op.gg#?##__next > div[class^="css-"] > div[class^="css-"] > div[class^="css-"]:has(> div:not([class]):not([id]) > div.vm-placement)
 lepoint.fr###WRAP_TOP_POS
 tft.op.gg###video-metaTrend-ad
-jmcomic1.me##.div_sticky2
 crx4chrome.com##div[style="min-height:336px;"]
 overwatch.op.gg,pubg.op.gg##.gtag-ad
 nukistream.com###sp_top_head
@@ -171,7 +167,7 @@ times.abema.tv##div[style="min-height: 100px;margin-bottom: 2vh; text-align: cen
 times.abema.tv##.article-banner
 upworthy.com##.mobile_ads
 cumhuriyet.com.tr#?#.container > div.row > div.row.mb20:has(> #sticky-player)
-18comic.org##.div_sticky2
+jmcomic1.me,18comic.org##.div_sticky2
 ehow.co.uk##.mobile-display-ad
 pcgames.de,gamesworld.de##.sdgSlotContainer
 pussyspace.com,pussyspace.net#?##main-area-box div[id]:has(> iframe[src*="/lazyload"])
@@ -188,7 +184,6 @@ otzovik.com##bigBanner
 sn-jp.com##.container_top_widget
 makeuseof.com##.adsninja-ad-zone
 nicomanga.com###listImgs > img ~ center
-m.winfuture.de#?##articleBody > div:has(> div[id^="div-gpt-ad"])
 oliveoiltimes.com##.container-fluid > div[style^="margin:"].code-block
 s-restaurant24h.site##.foot-btn
 eporner.com###admobileoutstream
@@ -309,7 +304,6 @@ eromanga-fantasy.com,erodoujinshi-world.com##iframe[height="270px"][width="320px
 masrawy.com##.featuredSCMob
 ||eromanga-musou.com/fammusou1.html
 eromanga-musou.com##iframe[src*="//eromanga-musou.com/fammusou1.html"]
-jeremyfoodie.tw##.header-fixed-area
 cleantechnica.com##.zox-post-body > center > a[target="_blank"] > span.mrf-detailsMedia
 cleantechnica.com##.zox-post-body > p > span > a[rel*="sponsored"] > span.mrf-detailsMedia
 engadget.com##div[data-ad-mn]
@@ -376,7 +370,6 @@ cleantechnica.com#?#.zox-post-body > p:has(> a[rel^="nofollow sponsored"][target
 cleantechnica.com##.wp-caption > a[rel^="nofollow sponsored"][target="_blank"]
 mangabtt.com##img[src$="/images/chapter/top.jpg"]
 gsminfo.com.ua###custom_html-15
-deavita.net##.single_ads
 muylinux.com##div[data-label="Publicidad"]
 khaleejtimes.com#?#.wrapper > div.container:has(> div.row > div.fix-billboard-nf)
 khaleejtimes.com#?#div.fix-billboard-nf:has(> .fix-billboard-nf-inner > div[class^="adslot-leaderboard"])
@@ -639,8 +632,6 @@ m.economictimes.com###int_overlay
 gendai.media###first-rectangle
 m.wcostream.net###rmds
 s.tabelog.com##.ad-rstdtl-wrap
-webcg.net##.infeed
-onepiece-akumanomi.com##.adsbygoogle
 imtest.de##div[class^="contentAd"]
 detail.chiebukuro.yahoo.co.jp##aside[class^="Detail_chie-Pages__AdNM_"]
 m.eprice.com.tw###m-m300-250-n
@@ -1073,7 +1064,7 @@ gotovim.ru##.rekmob
 eromanga-yasan.com,eromanga-ace.com###spcontent
 eromanga-yasan.com,eromanga-ace.com##.adontitle
 ||kusuriyasan.org^$image,third-party
-gqjapan.jp##div[class^="TwoColumnsWithHorizontalAdMosaicWrapper"]
+vogue.co.jp,gqjapan.jp##div[class^="TwoColumnsWithHorizontalAdMosaicWrapper"]
 news.biglobe.ne.jp###footer-anchor-banner
 golem.de##.media__teaser-list > li[style="margin: 0px; padding: 0px; border-top: 1px solid rgb(238, 238, 238) !important; border-right: 0px; border-bottom: 0px; border-left: 0px; border-image: initial;"]
 news.milli.az##.quiz-holder > div[style^="margin: 15px auto 15px"] > div[style^="margin"]
@@ -1639,7 +1630,7 @@ rank-king.jp##div[style="height:350px;"]
 xn--w8jtkjf8c570x.com##div[id$="mobile_banner_top"]
 kp.ru##div[class^="styled__LentaWrapper-"]
 kp.ru##.jebTor
-deavita.com##.single_ads
+deavita.net,deavita.com##.single_ads
 8mato.jp###article_contents > div.uk-margin-bottom.uk-text-center
 5chan.jp###advertise_main_header
 5chan.jp##.threadlist_adv_more
@@ -1750,7 +1741,7 @@ app.famitsu.com###gam_sp_post_content_after_2
 r10.net##.container > div > a[target="_blank"] > img
 handelsblatt.com,golem.de##.iqadmarker
 golem.de##.list-ticker > .sp-article
-golem.de##.adsbygoogle
+onepiece-akumanomi.com,golem.de##.adsbygoogle
 inside-digital.de##.spo-marker
 inside-digital.de##.content-contentad
 inside-digital.de##.social-share-mobile + #sonder-ueber-content
@@ -1903,7 +1894,7 @@ dic.nicovideo.jp###ad01
 dic.nicovideo.jp##.st-Header_Ad
 dic.nicovideo.jp##.st-Ad:not(#sdad)
 diamond.jp###gpt-dol-infeed-ranking
-saga-s.co.jp,diamond.jp##.infeed
+webcg.net,saga-s.co.jp,diamond.jp##.infeed
 producthunt.com##div[class*="styles_mobilePopoutAd_"]
 tofight.ru###cf-bg
 thetimes.co.uk##div[class*="NativeAd-"]
@@ -2120,7 +2111,6 @@ watch.impress.co.jp##.inline-rect
 watch.impress.co.jp##div[style="min-height: 250px;"]
 timeout.com##div[class^="_footer_ad_wrap_"]
 menshealth.de##.mh-sponsored
-m.formel1.de##.b-top-container
 computerbild.de##.mrecContainer
 gsminfo.com.ua###custom_html-12
 gsminfo.com.ua###custom_html-10
@@ -2685,7 +2675,7 @@ mobil.krone.at##div[data-krn-click-id="startseite-mobil-jackpot"]
 sciencealert.com##.ad_div
 testkolik.com,filmyani.*##.mobilreklam
 www-news18-com.cdn.ampproject.org,news18.com##.adv_wrp
-helloyishi.com.tw,greatergood.berkeley.edu##.article-mobile-ad
+hellosehat.com,helloyishi.com.tw,greatergood.berkeley.edu##.article-mobile-ad
 www-nytimes-com.cdn.ampproject.org##figure.margins-v.ad
 newsweekjapan.jp,m.sweclockers.com###topBanner
 expressen.se##body div.bam-ad-slot[data-slot-name]
@@ -3010,7 +3000,7 @@ newgrodno.by##.main-nav-below > nav#top-nav > div.container > div.topbar-wrapper
 m.tvtoday.de##.tv-program > .component > ul > li.js-table-row:not(.time-listing):not([data-start-time])
 txxx.com##.rek-item
 txxx.com##div[class^="rek-"]
-fox-saying.com,maxfoodfun.com,pixnet.net##.header-fixed-area
+jeremyfoodie.tw,fox-saying.com,maxfoodfun.com,pixnet.net##.header-fixed-area
 pixnet.net##.octopus
 pluggedin.ru##a[target="_blank"][href^="https://ads.adfox.ru"] > img
 community.spiceworks.com##.ad-content-slot
