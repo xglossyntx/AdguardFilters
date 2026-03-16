@@ -5072,7 +5072,6 @@ hdblog.it###main_container > div[style^="width:"]:not([id]):not([class])
 ||hdblog.it/new_files/ajax/prime_bf.php
 capitolivm.it##.hb-ad-inpage
 ||milanworld.net/js/siropu/
-milanworld.net##div[aria-label="Advertisement"]
 patentati.it###footad-container
 ||gazzettinodelchianti.it/wp-content/uploads/pum/pum-site-scripts.js$domain=gazzettinodelchianti.it
 gazzettinodelchianti.it#%#//scriptlet('prevent-window-open')
@@ -5170,6 +5169,9 @@ smellyfisher.com##.providers
 bestmovie.it,treccani.it##.gmp
 forum.fibra.click##.FibraClickAds-fake-poststream-item
 open.online##a[rel="sponsored"]
+! https://github.com/AdguardTeam/AdguardFilters/issues/227119
+!+ NOT_OPTIMIZED
+milanworld.net##div[aria-label="Advertisement"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215109
 htnovo.net#%#//scriptlet('prevent-setTimeout', 'baitElement.offsetHeight')
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
