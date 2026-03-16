@@ -85,6 +85,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+cosme.net##.question-detail-sns
 fxempire.com##div[data-playwright="social-share-bar-mobile"]
 fxempire.com##div[data-playwright="social-share-bar"]
 sentabi.jp###sns-share-button
