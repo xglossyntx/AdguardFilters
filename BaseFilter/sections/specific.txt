@@ -907,6 +907,9 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+playhop.com##.aab-adv
+playhop.com##.google-sticky-adv-banner
+||yandex.com/ads/$domain=playhop.com
 save-editor.com##.set_wrapper_absolute_right
 123av.fun##a[href^="https://qz.run/"]
 123av.fun##a[href="https://missav.run"]
