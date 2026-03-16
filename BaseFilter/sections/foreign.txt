@@ -8497,6 +8497,7 @@ infoprzasnysz.com##.rimy
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131077
 dziennikprawny.pl##article > div:not([class]) > a[target="_blank"][rel="noopener"] > img
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221686
+!+ NOT_OPTIMIZED
 ithardware.pl###home-sliderBaner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/218733
 ithardware.pl#$##special-section-4 { background-image: none !important; }
@@ -8506,9 +8507,10 @@ ithardware.pl#%#//scriptlet('abort-current-inline-script', 'document.getElementB
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131705
 ! https://github.com/AdguardTeam/AdguardFilters/issues/134017
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131054
-||ithardware.pl/js/mediaexpert-widget.js
 ithardware.pl###t_subpage > .gray-section > .container:has(> .flex-column-full:only-child > div[id^="t_ads_banner"]:only-child)
 ithardware.pl##div[id^="t_ads_banner"]
+!+ NOT_OPTIMIZED
+||ithardware.pl/js/mediaexpert-widget.js
 !+ NOT_OPTIMIZED
 ithardware.pl##div[id^="art-"][id*="Baner"]
 !+ NOT_OPTIMIZED
