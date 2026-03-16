@@ -907,6 +907,7 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+viexx.com##.info-banner
 ||static.opensubtitles.org/libs/js/ray-announcement-bar.js
 statecollege.com##div[class^="adapex"]
 statecollege.com##div[class^="ad_code_"]
