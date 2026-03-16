@@ -28,6 +28,7 @@
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||analytics.morphe.software^
 ||a.n11.com^
 ||h.n11.com^
 ||pulse.perfmetrics.netflix.com^
