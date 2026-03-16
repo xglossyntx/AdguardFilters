@@ -14558,6 +14558,9 @@ regio-guide.de#%#//scriptlet('trusted-click-element', '.consent-layer-modal #con
 ! https://github.com/AdguardTeam/AdguardFilters/issues/184455
 !+ PLATFORM(ext_ublock)
 all-inkl.com#$?##ai-hinweis { remove: true; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/227038
+!+ NOT_OPTIMIZED
+||ertflix.gr^$referrerpolicy=origin
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214147
 !+ NOT_OPTIMIZED
 ||nutraxin.com.tr^$referrerpolicy=origin
