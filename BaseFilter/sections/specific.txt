@@ -907,6 +907,7 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+fxempire.com###__next > div[height]:not([id]):has(> section[style^="height:"] > #trade-with-broker)
 gizmodo.com#%#//scriptlet('remove-class', 'dld-cta__link', '', 'stay')
 24timezones.com##.ad-container-wtd
 blooloop.com##.topbarplaceholder
