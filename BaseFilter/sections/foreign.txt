@@ -158,7 +158,6 @@ wecima.click##a[href*="&utm_medium=banner"] > img
 ||wecima.click/static/js/adBlock.js
 wecima.click#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183251
-shamra.sy#@#.AdsBox
 shamra.sy#%#//scriptlet('prevent-setTimeout', '.offsetHeight')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/182298
 ||rolpenszimocca.com^

@@ -1304,8 +1304,6 @@ ukussa.net#%#//scriptlet('remove-node-text', 'script', 'bait')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226177
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227037
 luluvdo.com,luluvdoo.com#%#//scriptlet('prevent-setTimeout', 'bait')
-!+ PLATFORM(ios, ext_android_cb, ext_safari)
-luluvdo.com,luluvdoo.com#@#.AdsBox
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226231
 sagar-tv.com###aab-overlay
 ! https://github.com/AdguardTeam/AdguardFilters/issues/225923
@@ -1339,8 +1337,6 @@ spotidown.app#%#//scriptlet('prevent-xhr', 'adsbygoogle')
 gupload.xyz#%#//scriptlet('prevent-setTimeout', 'detect')
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||gupload.xyz^$generichide
-! https://github.com/AdguardTeam/AdguardFilters/issues/225168
-reallifecams.us#@#.AdsBox
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224937
 ||acapellas.eu/ublock-only.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224944
@@ -1420,11 +1416,9 @@ tryigit.dev#%#//scriptlet('abort-on-stack-trace', 'console.log', 'checkAdBlocker
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224490
 hitslink.xyz###adblock-overlay
-hitslink.xyz#@#.AdsBox
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224389
 ||adultconfessions.com/js/abdetectorpro
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224447
-bigshare.io#@#.AdsBox
 bigshare.io#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'detectAdBlock')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224412
 ! filemoon antiadb reproducible on frequent refresh
@@ -1562,7 +1556,6 @@ h5.4j.com#%#//scriptlet('google-ima3')
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222092
 vidnest.io#%#//scriptlet('abort-on-stack-trace', 'document.querySelectorAll', 'blockVideoCompletely')
-vidnest.io#@#.AdsBox
 @@||vidnest.io^$generichide
 vidnest.io#%#//scriptlet('prevent-setTimeout', 'bait.remove')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221824
@@ -3418,7 +3411,6 @@ cablevisionhd.com,telegratishd.com##.site-access-popup
 ! https://github.com/AdguardTeam/AdguardFilters/issues/180787
 freeminecrafthost.com#@#.textAds
 freeminecrafthost.com#@#.Textads
-freeminecrafthost.com#@#.AdsBox
 ! https://github.com/AdguardTeam/AdguardFilters/issues/180600
 newbharatyojna.com###adb
 ! https://github.com/AdguardTeam/AdguardFilters/issues/180610
@@ -8653,7 +8645,6 @@ desktophut.com#%#//scriptlet("abort-current-inline-script", "document.getElement
 ! https://github.com/AdguardTeam/AdguardFilters/issues/154273
 ! https://github.com/AdguardTeam/AdguardFilters/issues/143181
 ! https://github.com/AdguardTeam/AdguardFilters/issues/66997
-vidmoly.biz,vidmoly.me,vidmoly.net,vidmoly.to#@#.AdsBox
 vidmoly.biz,vidmoly.me,vidmoly.net,vidmoly.to###adsblock
 vidmoly.biz,vidmoly.me,vidmoly.net,vidmoly.to###x-adb-root
 vidmoly.biz,vidmoly.me,vidmoly.net,vidmoly.to##body > div[style*="opacity:"][style*="position: fixed; width:"][style*="z-index:"]
