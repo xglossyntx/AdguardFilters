@@ -907,6 +907,8 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+winaero.com###indbl
+winaero.com##.windiv
 javxxx.me###menu-main > li.nav-item:has(> a[rel^="sponsored"])
 viexx.com##.info-banner
 ||static.opensubtitles.org/libs/js/ray-announcement-bar.js
