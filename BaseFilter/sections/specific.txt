@@ -907,6 +907,7 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+attractionsmagazine.com##a[href^="https://mousefantravel.com/"]
 missav.run##a[href="https://whos.tv"]
 missav.run##.banner-box
 missav.run##.grid > div.video-card:not([id])
