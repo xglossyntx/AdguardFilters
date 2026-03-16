@@ -907,6 +907,8 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+123av.fun##a[href^="https://qz.run/"]
+123av.fun##a[href="https://missav.run"]
 attractionsmagazine.com##a[href^="https://mousefantravel.com/"]
 missav.run##a[href="https://whos.tv"]
 missav.run##.banner-box
