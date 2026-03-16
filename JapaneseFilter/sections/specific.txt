@@ -60,6 +60,9 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+||mwed.jp/articles/banner*.png
+||mwed.jp/c/*/articles/company_advertisement/
+||mwed.jp/c/*/banner/
 cancam.jp##.widget-tdad
 cancam.jp##div[id^="div-gpt-ad-"]
 news.golfdigest.co.jp##.ad-profile-header
