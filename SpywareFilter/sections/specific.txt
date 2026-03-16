@@ -83,6 +83,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||sdk.rum.aliyuncs.com/v*/bl.js
 ||cimri.com/api/pixel
 ||api.k2s.cc/v1/analytics/
 ||jm-madeira.pt/html/js/iter-libraries/iter-statistics.js
@@ -2697,7 +2698,7 @@ markezine.jp##.carouselBlock > li[id^="cx_"].c-headlineindex_listitem
 ||cdn.nwl1.megaknihy.cz/tr.js
 ||amazon.*/*/track_framework_metrics?
 ||vicodes.com/tag/load-*.js
-||arms-retcode-sg.aliyuncs.com/r.png?
+||arms-retcode*.aliyuncs.com/r.png?
 ||app.turbobiyt.net/js/analytics/index.js
 ||revive-chat.io/js/tracking-min.js
 ||sp.vtex.com/event-api/
