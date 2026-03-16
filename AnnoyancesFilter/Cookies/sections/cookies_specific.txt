@@ -1135,7 +1135,7 @@ funko.com#$#body { overflow: auto !important; padding-right: 0 !important; }
 funko.com#$#.dynamic-content-popup-modal { display: none !important; }
 funko.com#$#.dynamic-content-popup-modal ~ div.modal-backdrop { display: none !important; }
 playerok.com#%#//scriptlet('set-local-storage-item', 'cookie-сonsent', 'true')
-hacksawgaming.com###CookieConsentModal
+whitepapersonline.com,hacksawgaming.com###CookieConsentModal
 lebkuchen-schmidt.com#%#//scriptlet('trusted-click-element', '#usercentrics-root >>> button[data-testid="uc-deny-all-button"]')
 lit.dev##litdev-cookie-banner
 cdn.sirdata.eu#%#//scriptlet('trusted-replace-node-text', 'script', 'initSdVideoWall', 'if (!success)', 'if(!1)')
