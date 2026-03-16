@@ -907,6 +907,8 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+wildtangent.com##aside.md\:flex > .mx-auto:has(div[id$="side-skyscraper"])
+wildtangent.com##div[class^="container mx-auto"] > div > .justify-center.flex:has(> div[id$="top-banner"])
 playhop.com##.aab-adv
 playhop.com##.google-sticky-adv-banner
 ||yandex.com/ads/$domain=playhop.com
