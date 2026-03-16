@@ -25,6 +25,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/227123
+@@||jav.sb^$stealth=flash
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226983
 @@||maxstream.org^$subdocument,stealth=referrer,third-party
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226948
