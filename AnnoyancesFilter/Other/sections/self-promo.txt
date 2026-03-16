@@ -203,6 +203,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+gemini.google.com##.upgrade-container
 realty.yandex.ru##main > div > div[class^="container-"]:has(> div[class^="container-"] > form > div.Suggest)
 n11.com##a[data-banner-type="promotion"]
 jitenon.jp##.register_ad
