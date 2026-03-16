@@ -4422,7 +4422,7 @@ indiatimes.com##.last8brdiv > div.sponsor_block
 !
 ! NOTE: Indonesian
 !
-indopanas.cyou#%#//scriptlet('set-constant', 'prerollActive', 'false') 
+indopanas.cyou#%#//scriptlet('set-constant', 'prerollActive', 'false')
 moenime.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'ad_limit')
 moenime.com#$?#body > div[class]:not([id]) > dialog[class][open] { remove: true; }
 ngefilm.site##.idmuvi-afterplayer
@@ -10472,6 +10472,8 @@ mgsm.pl###left-con > .row > .columns > div[style="height: 336px;"]
 emonitoring.poczta-polska.pl###getbaner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/41151
 expressilustrowany.pl#?#.componentsRecommendationsSimpleListing__content > .componentsRecommendationsSimpleListing__element[data-slot-show]:has(> #dfp-nativesrodek1)
+! https://github.com/AdguardTeam/AdguardFilters/issues/227011
+telepolis.pl##.article__body .sales
 ! https://github.com/AdguardTeam/AdguardFilters/issues/201771
 telepolis.pl##.banner--no-placeholder
 ! https://github.com/AdguardTeam/AdguardFilters/issues/212967
