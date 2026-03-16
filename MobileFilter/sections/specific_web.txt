@@ -80,6 +80,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+cancam.jp##.sp-template-field
 123865.com##body > div:not([id]):not([class])
 cdn.ampproject.org##.ad-control-left
 by-them.com##.page_bottom_fixed_ad_wap
