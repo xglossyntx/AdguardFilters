@@ -25,6 +25,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/227220
+@@||vox-xov-cdn-*.$xmlhttprequest,stealth=referrer,domain=nepu.to
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227123
 @@||jav.sb^$stealth=flash
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226983
