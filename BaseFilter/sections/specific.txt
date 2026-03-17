@@ -916,6 +916,8 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+mtpro.xyz##a[href^="tg://resolve?domain=durevpnbot"]
+mtpro.xyz##a[href^="https://px6.me/"]
 oddsportal.com##.bonus_offer_mobile
 oddsportal.com##a[href^="/bookmaker/"][target="_blank"][rel="nofollow"]
 hentaila.com##.flex > div.mx-auto:has(> iframe[width="300"][height="250"])
