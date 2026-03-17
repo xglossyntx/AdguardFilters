@@ -1429,9 +1429,6 @@ universoformulas.com#%#window.UFads = true;
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11545
 !+ PLATFORM(ios, ext_android_cb)
 @@||eurosport.es^$generichide
-! https://github.com/AdguardTeam/AdguardFilters/issues/11384
-!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
-@@||novelasd.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11255
 @@||nmn900.com/js/adsbygoogle.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/10730
