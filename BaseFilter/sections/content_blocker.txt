@@ -521,7 +521,6 @@ cdn.braun634.com^$third-party
 @@||massivetechinterview.blogspot.com^$generichide
 @@||tech-zealots.com^$generichide
 @@||av-drive.blogspot.com^$generichide
-@@||adorofilmesdeterror.com^$generichide
 @@||alt-torrent.com^$generichide
 @@||amtonline.com.br^$generichide
 @@||androidaba.com^$generichide
