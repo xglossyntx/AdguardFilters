@@ -916,6 +916,8 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+oddsportal.com##.bonus_offer_mobile
+oddsportal.com##a[href^="/bookmaker/"][target="_blank"][rel="nofollow"]
 hentaila.com##.flex > div.mx-auto:has(> iframe[width="300"][height="250"])
 hentaila.com##header > div.text-white:has(> div.container a[href^="https://a.adtng.com/"])
 ||hentaihand.com/api/featured
