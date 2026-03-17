@@ -911,6 +911,7 @@ techarmor.xyz##.my-ad-container
 ||hentaihand.com/api/featured
 hentaihand.com##.container > .row > div:has(> .comic.box > .image > div[data-spots])
 simply-hentai.com#%#//scriptlet('json-prune', 'props.layoutProps.data.ads.*.code props.layoutProps.data.adverts.*.code')
+simply-hentai.com##ul.top-menu > li[class=""]
 dayspedia.com##.puzzlegarage.block
 templetoons.com#%#//scriptlet('prevent-window-open')
 ||templetoons.com/api/ads/
