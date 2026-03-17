@@ -916,6 +916,8 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+hentaila.com##.flex > div.mx-auto:has(> iframe[width="300"][height="250"])
+hentaila.com##header > div.text-white:has(> div.container a[href^="https://a.adtng.com/"])
 ||hentaihand.com/api/featured
 hentaihand.com##.container > .row > div:has(> .comic.box > .image > div[data-spots])
 simply-hentai.com#%#//scriptlet('json-prune', 'props.layoutProps.data.ads.*.code props.layoutProps.data.adverts.*.code')
