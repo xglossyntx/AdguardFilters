@@ -1605,8 +1605,6 @@ lnk.parts,lnk.news#%#(()=>{document.addEventListener('DOMContentLoaded',()=>{if(
 sammobile.com#%#//scriptlet("adjust-setInterval", "showDownloadButton", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/49717
 videouroki.net#%#//scriptlet("adjust-setTimeout", "/action-downloadFile?")
-! https://github.com/AdguardTeam/AdguardFilters/issues/49713
-tr3fit.xyz#%#//scriptlet("set-constant", "tempo2", "0")
 ! daz3d.ru - snow animation
 daz3d.ru#%#//scriptlet("set-constant", "snow", "undefined")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/49352

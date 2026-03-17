@@ -423,7 +423,6 @@ cdn.braun634.com^$third-party
 @@||iptv.allkaicerteam.com^$generichide
 @@||myicloud.info^$generichide
 @@||smashresume.com^$generichide
-@@||tr3fit.xyz^$generichide
 @@||mega-p2p.net^$generichide
 @@||infodifesa.it^$generichide
 @@||info-desk.co.za^$generichide
