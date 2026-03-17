@@ -14090,7 +14090,6 @@ dailynewshungary.com##.dnh-ad-header-banner
 3dzip.org##img.sphyerf-image
 3dzip.org##.better-ads-listitemad
 typingtestnow.com##a[href$=".clickbank.net/"] > img
-fifermods.com###masterPage > :not(footer) .tpaw0
 brantfordexpositor.ca##.sponsored-wrap > .sponsored
 codeshare.io###codeshare > .sp-tile
 porn4days.net##body .navbar-nav > li > a[rel="nofollow"]
