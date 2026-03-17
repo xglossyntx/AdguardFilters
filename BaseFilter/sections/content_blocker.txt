@@ -2069,9 +2069,6 @@ latimes.com##.google-dfp-ad-caption
 /invoke.js|$third-party,domain=boards.4channel.org
 ! https://github.com/AdguardTeam/AdguardFilters/issues/56564
 .com/*/*/*/*.js$domain=cimaclub.cam|govid.co
-! https://github.com/AdguardTeam/AdguardFilters/issues/53072
-.com/*&refer=*&kw=*&key=*&scrWidth=*&scrHeight=*&tz=*&res=*&dev=
-/\/[a-z0-9][a-z0-9]\/[a-z0-9][a-z0-9]\/[a-z0-9][a-z0-9]\/.*\.js/$domain=watch32.is,third-party
 ! https://github.com/AdguardTeam/AdguardFilters/issues/47069
 ! ai_adb anti-adblock
 @@||papunika.com^$generichide
