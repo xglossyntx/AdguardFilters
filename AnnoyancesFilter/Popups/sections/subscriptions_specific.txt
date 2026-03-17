@@ -57,6 +57,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+shazoo.ru##aside > div.grid:has(> div.flex a[href="https://t.me/weareshazoo"])
 yesasia.ru##.ya-box
 bbc.com##section[data-testid^="message-banner-"]
 gamesradar.com###utilitybar__button--newsletter
