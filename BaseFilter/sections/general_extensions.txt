@@ -1806,8 +1806,6 @@ pornvideotop.com#%#//scriptlet("prevent-setTimeout", "location.href")
 shtms.co,gitizle.vip,ay.live#%#//scriptlet('set-constant', 'mainClick', 'undefined')
 shtms.co,gitizle.vip,ay.live#%#//scriptlet('set-constant', 'popush', 'undefined')
 shtms.co,gitizle.vip,ay.live#%#//scriptlet('remove-attr', 'data-ppcnt_ads', 'main')
-! amyscans.com fake player
-amyscans.com#%#//scriptlet("remove-attr", "href", "a[href]#clickfakeplayer")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/91006
 123moviesfree.love#%#//scriptlet('noeval')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/90670
