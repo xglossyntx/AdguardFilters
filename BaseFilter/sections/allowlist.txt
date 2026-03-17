@@ -4145,9 +4145,10 @@ petshop.ru#@#.advert-block
 @@||swedbank.ee^$document
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2926
 @@||cdn.intergi.com/hera/*.js$domain=thenextweb.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/227171
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2906
 ! Fixing issues with players
-@@||imasdk.googleapis.com/js/core/bridge*.html$domain=~spotify.com
+@@||imasdk.googleapis.com/js/core/bridge*.html$domain=~spotify.com|~danet.vn
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2908
 @@||user.weiyun.com/newcgi/outlink.fcg$document
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2853
