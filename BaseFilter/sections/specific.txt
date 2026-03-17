@@ -14361,7 +14361,6 @@ webcamshows.org##.Dvr300
 hackforums.net##.mam-header > a[href][target="_blank"] > img
 ||hackforums.net/uploads/mam/*.gif
 ||headfonics.com/wp-content/*/Banner-*.gif
-manatelugumovies.cc##.laptopad
 ||linuxtopia.org/includes/tools.js
 ||linuxtopia.org/images/eBookStore_*.png
 linuxtopia.org##a[href*="ebookfrenzy.com/"]
@@ -20160,8 +20159,6 @@ playtube.pk#?#.container > .panel-default:has(> .panel-body > .adcode)
 prostylex.org#?#.wrapper > div[style*="text-align"]:has(> a[href^="https://trustaffs.com"])
 askvg.com#?##sidebarHome > p:contains(/^Advertisements$/)
 ratemyprofessors.com#?##container > .sticky-wrapper:has(> .ad.GAM)
-manatelugumovies.cc#?#center > h6:contains(Advertisement)
-manatelugumovies.cc#?#.sidebar > h6:contains(Advertisement)
 investmentwatchblog.com#?#.inside-right-sidebar > aside[id^="custom_html-"]:has(> div.textwidget:empty)
 investmentwatchblog.com#?#.inside-right-sidebar > aside[id^="custom_html-"]:has(> div > script[src^="//ads.investingchannel.com/"])
 vosizneias.com#?#.body > div[style^="position: relative;"]:has(> #gruuvAd)

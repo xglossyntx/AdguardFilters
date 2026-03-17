@@ -510,7 +510,6 @@ cdn.braun634.com^$third-party
 @@||chile-forum.ru^$generichide
 @@||todotech20.com^$generichide
 @@||dostats.info^$generichide
-@@||manatelugumovies.cc^$generichide
 @@||readcomicsonline.ru^$generichide
 @@||correotemporal.org^$generichide
 @@||g-status.com^$generichide
