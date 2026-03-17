@@ -916,6 +916,8 @@ techarmor.xyz##.my-ad-container
 !
 ! NOTE: Specific rules
 !
+primesrc.me#%#//scriptlet('remove-attr', 'href', 'a.splash')
+primevid.click##a[href^="https://fairscrew.com/"]
 2short.club##.mdlAd
 mtpro.xyz##a[href^="tg://resolve?domain=durevpnbot"]
 mtpro.xyz##a[href^="https://px6.me/"]
