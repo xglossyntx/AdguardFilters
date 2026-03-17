@@ -14295,7 +14295,6 @@ sendvid.com##a[target="_blank"][style*="position: fixed"][style*="z-index:"]
 sendvid.com###video-js-video > a[href="javascript:void(0)"][style*="z-index: 99999"]
 hcbdsm.com,motherporno.com,momvids.com##.aside
 gamerant.com##.ad-zone-container
-earn4files.com##center > div[style="width:336px; height:280px; background-color:#ffffff; text-align:center"]
 ||a.o333o.com/api/spots^
 ||pub.javwide.com/UN4DlQ5.js
 accuweather.com##.ad-lr

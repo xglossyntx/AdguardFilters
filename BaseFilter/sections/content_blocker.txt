@@ -506,7 +506,6 @@ cdn.braun634.com^$third-party
 @@||herexxx.com^$generichide
 @@||go-links.net^$generichide
 @@||turkdown.com^$generichide
-@@||earn4files.com^$generichide
 @@||tempmail.ninja^$generichide
 @@||chile-forum.ru^$generichide
 @@||todotech20.com^$generichide
