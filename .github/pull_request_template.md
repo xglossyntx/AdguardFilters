@@ -32,6 +32,9 @@
 
 <!-- Example: Fix <https://github.com/AdguardTeam/AdguardFilters/issues/100000> -->
 
+<details>
+<summary>Optional info.</summary>
+ 
 ### Add your comment and screenshots
 
 #### If possible, a screenshot of a page or application should not be cropped too much. Otherwise, it is not always clear where the element is located
@@ -72,6 +75,7 @@
 
 </details>
 
+</details>
 ### Terms
 
 - [ ] By submitting this issue, I agree that pull request does not contain private info and all conditions are met
