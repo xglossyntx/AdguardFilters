@@ -1,7 +1,7 @@
 sites:
   Belestepe (belestepe*.sbs):
-    last_known_mirror: belestepe836.sbs
-    success_since: 2026-05-28 01:43
+    last_known_mirror: belestepe856.sbs
+    success_since: 2026-05-30 20:03
   Turkifsaclub (turkifsaclub*.sbs):
     force_search_ahead: true
     last_known_mirror: turkifsaclub130.sbs
@@ -10,8 +10,8 @@ sites:
     last_known_mirror: jmanga.baby
     success_since: 2026-05-27 10:12
   iNat TV (inattv*.xyz):
-    last_known_mirror: inattv1309.xyz
-    success_since: 2026-05-28 01:43
+    last_known_mirror: inattv1310.xyz
+    success_since: 2026-05-30 20:03
   HDFilmCehennemi (hdfilmcehennemi*.org):
     initial_domain: t.co/3D4ep5ZtK4
     last_known_mirror: hdfilmcehennemi27.org
@@ -36,8 +36,8 @@ sites:
     accept_antibot: true
     geoblock: TR
     force_search_ahead: true
-    last_known_mirror: papazsports1010.pro
-    success_since: 2026-05-28 08:22
+    last_known_mirror: papazsports1011.pro
+    success_since: 2026-05-30 20:03
   HiMovies (himovies.*):
     last_known_mirror: himovies.bz
     success_since: 2026-05-25
@@ -47,3 +47,5 @@ sites:
     success_since: 2026-05-28 08:22
   TurkIfsa (turkifsa*.art):
     initial_domain: turkifsa25.art
+    last_known_mirror: turkifsa25.art
+    success_since: 2026-05-30 20:03
