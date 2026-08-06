@@ -31,25 +31,26 @@
 ### Enter the issue address
 <!-- "Example:" isn’t needed and shouldn’t be included in your pull request. -->
 Example: Fix <https://github.com/AdguardTeam/AdguardFilters/issues/100000>
-
-<details>
-<summary>Additional info.</summary>
  
 ### Add your comment and screenshots
 
 #### If possible, a screenshot of a page or application should not be cropped too much. Otherwise, it is not always clear where the element is located
 
-0. **DO NOT** upload screenshots with sexually explicit material on GitHub directly.\
+> **DO NOT** upload screenshots with sexually explicit material on GitHub directly.\
  Instead, upload it to a third-party image hosting and post the link to it without preview (!) here.\
  Also, mention if the link leads to NSFW content;
 
-1. Add screenshots of the problem. You can drag and drop images or paste them from clipboard
+<details>
+<summary>Instructions.</summary>
+
+0. Add screenshots of the problem. You can drag and drop images or paste them from clipboard
 
     Use `<details> </details>` tag to hide screenshots under the spoiler;
 
-2. Describe the issue in detail until it is absolutely clear from the screenshot what the problem is
+1. Describe the issue in detail until it is absolutely clear from the screenshot what the problem is
 
     You can also indicate any other information that you think the developers should know.
+</details>
 
 **Warning:** Please remove personal information before uploading screenshots!
 
@@ -75,7 +76,6 @@ Example: Fix <https://github.com/AdguardTeam/AdguardFilters/issues/100000>
 
 </details>
 
-</details>
 ### Terms
 
 - [ ] By submitting this issue, I agree that pull request does not contain private info and all conditions are met
