@@ -29,11 +29,11 @@
 ## What issue is being fixed?
 
 ### Enter the issue address
-
-<!-- Example:--> Fix <https://github.com/AdguardTeam/AdguardFilters/issues/100000>
+<!-- "Example:" isn’t needed and shouldn’t be included in your pull request. -->
+Example: Fix <https://github.com/AdguardTeam/AdguardFilters/issues/100000>
 
 <details>
-<summary>Optional info.</summary>
+<summary>Additional info.</summary>
  
 ### Add your comment and screenshots
 
