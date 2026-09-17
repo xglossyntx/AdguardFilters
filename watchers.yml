@@ -47,7 +47,7 @@ sites:
     force_search_ahead: true
     last_known_mirror: piabettv18.live
     failed_since: 2026-08-19 13:21
-    failed_days: 29
+    failed_days: 30
     potentially_dead: true
   voe.sx:
     initial_domain: https://voe.sx/e/q9ed7q8sqh2d
@@ -55,8 +55,8 @@ sites:
       - Redirecting...
     probe_text:
       - /jwplayer.js
-    last_known_mirror: johnfullwonder.com
-    success_since: 2026-09-10 01:22
+    last_known_mirror: katherineschoolphone.com
+    success_since: 2026-09-17 17:23
   PapazSports (papazsports*.pro):
     initial_domain: psgiris.pro
     accept_antibot: true
@@ -107,17 +107,17 @@ sites:
       - https://vidmoly.
     success_since: 2026-06-17 08:47
   Mapple-1 (mapple.*):
-    last_known_mirror: mapple.rip
-    success_since: 2026-08-21 07:20
+    last_known_mirror: mapple.fun
+    success_since: 2026-09-17 17:23
   Mapple-2 (mapplee.com):
     # probably with another domain name scheme
-    last_known_mirror: mapplee.com
+    last_known_mirror: mapple.fun
     accept_antibot: true
-    success_since: 2026-06-22 20:05
+    success_since: 2026-09-17 17:23
   Cimcime (cimcime*.live):
-    last_known_mirror: cimcime158.live
+    last_known_mirror: cimcime159.live
     accept_antibot: true
-    success_since: 2026-09-15 01:26
+    success_since: 2026-09-17 17:23
   MaçtanMaça:
     last_known_mirror: mactanmaca549.sbs
     success_since: 2026-09-03 01:28
@@ -229,7 +229,9 @@ sites:
     force_search_ahead: true
     probe_text:
       - GalyaBet TV
-    success_since: 2026-09-16 01:24
+    failed_since: 2026-09-17 17:23
+    failed_days: 0
+    potentially_dead: true
   Mahsunsports (mahsunsports*.xyz):
     last_known_mirror: mahsunsports80.xyz
     force_search_ahead: true
@@ -267,8 +269,8 @@ sites:
     failed_days: 41
     potentially_dead: true
   Turkifsalife (turkifsalife*.blog):
-    last_known_mirror: turkifsalife55.lat
-    success_since: 2026-09-14 19:11
+    last_known_mirror: turkifsalife56.lat
+    success_since: 2026-09-17 17:23
   Rtally link (rtally.link):
     initial_domain: rtally.xyz
     last_known_mirror: www.rtally.xyz
