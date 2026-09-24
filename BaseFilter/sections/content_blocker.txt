@@ -309,7 +309,6 @@ cdn.braun634.com^$third-party
 @@||raphsonbd.com^$generichide
 @@||unity3diy.blogspot.com^$generichide
 @@||vviruslove.com^$generichide
-@@||shrinkurl.org^$generichide
 @@||yannik.biz^$generichide
 @@||anonymous-links.com^$generichide
 @@||series-streaminghd.com^$generichide
@@ -783,7 +782,6 @@ king-shoot.tv#@##ads_top
 @@||getlec.blogspot.com^$generichide
 @@||grafixfather.com^$generichide
 @@||gtoys.blog.fc2.com^$generichide
-@@||hdbox.ws^$generichide
 @@||i8086.de^$generichide
 @@||itdmusic.com^$generichide
 @@||jagobd.com^$generichide
