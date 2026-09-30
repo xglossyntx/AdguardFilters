@@ -421,7 +421,7 @@ sites:
   TrGoals (trgoals*.top):
     last_known_mirror: trgoals183.top
     failed_since: 2026-09-18 13:12
-    failed_days: 12
+    failed_days: 13
     potentially_dead: true
   WorldFree4u (worldfree4u.*):
     # initial_domain: worldfree4u.gd
