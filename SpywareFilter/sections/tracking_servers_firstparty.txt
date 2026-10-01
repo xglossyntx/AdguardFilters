@@ -28,6 +28,32 @@
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||scout.data.funkedigital.de^
+||sp.data.funkedigital.de^
+||nao.kagane.to^
+||users.vidy.st^$third-party
+||hits.letras.mus.br^
+||tracking.dpmlol.com^
+||beam.telegram.hr^
+||tracker.telegram.hr^
+||campaign.telegram.hr^
+||data-www-weaver.wanted.co.kr^
+||eventlog.setka.ru^
+||metrics.temptcdn.com^
+||analytics.click-or-die.ru^
+||analytics.sportigio.com^
+||bzr.openai.com^
+||rlog.baifentan.com^
+||analytics.laxamentum.tech^
+||e.missav.
+||u.omgjav.com^
+||n.nstbrowser.io^
+||stats.stellar.rip^
+||dtam.thrive.today^
+||jnt.bild.de^
+||otl.minefun.io^
+||counter.wargamings.net^
+||analyticssec.overwolf.com^
 ||gadata.motorpresse.de^
 ||p.food.ru^
 ||7lzwgj.donaukurier.de^
@@ -47,7 +73,6 @@
 ||stats.dulo.
 ||clientlog.wanmei.com^
 ||jnt.welt.de^
-||agrau.aii.sh^
 ||emergency.zeta-ai.io^
 ||carmen2.golem.de^
 ||ue.a-bly.com^
@@ -695,7 +720,6 @@
 ||j0v36abmdj.execute-api.us-east-1.amazonaws.com^
 ||lumberjack-metrics.razorpay.com^
 ||statistics-collector-api.listglobally.com^
-
 prd.api.bleacherreport.com^
 ||events.shoplift.ai^
 ||flxr.myplan-c.com^
@@ -711,7 +735,6 @@ prd.api.bleacherreport.com^
 ||web-ivcbrasil-tag.s3.us-west-2.amazonaws.com^
 ||log.realelements.live^
 ||metrics.cs.money^
-||counter-mdpr.freetls.fastly.net^
 ||vortex-dual.hulu.com^
 ||alexa-hybrid-interaction-log-config-prod-na.s3.amazonaws.com^
 ||xpu.samsungelectronics.com^
