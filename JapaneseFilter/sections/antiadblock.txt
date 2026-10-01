@@ -9,6 +9,18 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/242937
+onepiecelabs.tonuriaz.info#%#//scriptlet('prevent-setTimeout', '/resolve|native/', '300')
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onepiecelabs.tonuriaz.info
+! fuucdayo.com anti-adb
+fuucdayo.com#%#//scriptlet('prevent-fetch', 'adsbygoogle')
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=fuucdayo.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/241657
+fjkcircle2.cfbx.jp#%#//scriptlet('prevent-fetch', 'adm.shinobi.jp')
+!+ PLATFORM(ios, ext_android_cb, ext_safari)
+@@||adm.shinobi.jp^$xmlhttprequest,domain=fjkcircle2.cfbx.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241289
 ||ka-chanblog.com/wp-content/themes/kachan-tarkov-theme/assets/js/adblock-wall.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/239659
@@ -43,7 +55,13 @@ mangaruu.com,rawfree.top,soraraw.*#%#//scriptlet('set-constant', 'navigator.brav
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$xmlhttprequest,domain=soraraw.net|soraraw.site|rawfree.top|mangaruu.com
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233289
-/yamiisoku-anti-adblock/*$domain=monhan-soku.com|yamiisoku.com|genshin-soku.com
+/yamiisoku-anti-adblock/*$domain=genshin-soku.com|monhan-soku.com|xn--gckdevd5myivf.site|yamiisoku.com
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com#%#//scriptlet('set-constant', 'YAAB', 'undefined')
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com#@#.ad-wrapper
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com#@#.adsense_top
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com#@#.google-ad
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?_yaab=$domain=genshin-soku.com|monhan-soku.com|xn--gckdevd5myivf.site|yamiisoku.com
 ! classic anti-adb?
 plus.fm-p.jp#@#.ad_overlay
 ! https://github.com/AdguardTeam/AdguardFilters/issues/232133
@@ -155,7 +173,7 @@ chobirich.com#$#.Enquete { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176057
 toyokeizai.net###tpModal
 ! hhttps://github.com/AdguardTeam/AdguardFilters/issues/209363
-shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com#$#.ad.ads.adsbygoogle.ad-space.adbox.imggif.ad-banner.amp_ad.file-display-area { display: block !important; }
+shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com#$#.ad.ads.adsbygoogle.ad-space.ad-banner.amp_ad.file-display-area { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/195303
 shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com#@#.ad-space:not(.textads)
 shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com#@#[class^="div-gpt-ad"]:not([style^="width: 1px; height: 1px;"], .div-gpt-ad_adblock_test)
@@ -265,10 +283,6 @@ hatenablog.com#@##adframe:not(frameset)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176920
 mx2b.nan-net.jp###adblock_guide_mask
 mx2b.nan-net.jp##.adblock_guide_box
-! https://github.com/AdguardTeam/AdguardFilters/issues/176922
-b.best-hit.tv#$#.ad.ads.adsbygoogle.ad1.ad-space.adbox.imggif.ad-banner.amp_ad.file-display-area { display: block !important; }
-!+ PLATFORM(ios, ext_android_cb)
-@@||b.best-hit.tv^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176276
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=intaa.net
 !+ PLATFORM(ios, ext_android_cb)
