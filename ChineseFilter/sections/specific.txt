@@ -43,6 +43,18 @@ $script,xmlhttprequest,third-party,domain=00ksw.com|01zww.com|0biquge.com|114zw.
 !
 ! NOTE: Specific rules
 !
+||javlibrary.com/img/bnr*.gif
+||javlibrary.com/js/b3nr*.js
+3dmgame.com##.downlwrap > div[style="width:274px;height:368px; overflow: hidden;float:right;position: relative;margin-top:  45px;"]
+.gif^$image,third-party,domain=4hu.tv|g655p8.com|d44t95.com
+g655p8.com,d44t95.com,4hu.tv##div[class^="pg-v-sec-"]
+g655p8.com,d44t95.com,4hu.tv###__nuxt ~ div[data-tag]
+g655p8.com,d44t95.com,4hu.tv#%#//scriptlet('set-local-storage-item', '/^__ad/', '$remove$')
+g655p8.com,d44t95.com,4hu.tv#%#//scriptlet('set-constant', 'Object.prototype.getAd', 'noopFunc')
+g655p8.com,d44t95.com,4hu.tv#%#//scriptlet('prevent-setTimeout', 'getAd')
+ikanbot.com#%#//scriptlet('prevent-window-open', '_blank')
+||ikanbot.com/resources/common.js?v=$script
+huangguoai.com##.hg-ssp-slot
 programme.tvb.com##.tvb-ads--empty
 mscw-guidebook.com##.plaza-ad-wrap
 adersaytech.com##.adersay-ad
@@ -167,7 +179,6 @@ freedidi.com##.spm-on:has(> div[class^="spm"] > .spm-body > a[target="_blank"])
 ssm.fun##.cAnnouncements
 ssm.fun##.cAnnouncementsContent
 123pan.cn##.web-wrap > div:has(> img[src^="https://statics.123pan.com/"])
-123pan.cn,123865.com#%#//scriptlet('prevent-window-open')
 123pan.cn,123865.com##.bg_svip_block_ads
 ||static.dhsz.cn^$image,domain=123865.com|123pan.cn
 ||udn.com/static/js/google-dfp-native.js
@@ -345,7 +356,6 @@ macromicro.me#%#//scriptlet('abort-current-inline-script', '$', 'mmPopup() {')
 *$denyallow=123dua.com,domain=123dua.com,script,xmlhttprequest
 wikisport.cc#%#//scriptlet('prevent-innerHTML', 'div', '_mtj')
 nunuju.net,bz88888.net#%#//scriptlet('abort-current-inline-script', 'document.getElementsByTagName', '_mtj')
-||bz88888.net/js/cdn.js
 helper-employer.com##div[class^="mantine-"][style^="display:"]
 /[a-z0-9]+\.[a-z0-9]+\//$denyallow=cidetxt.cc,domain=cidetxt.cc,subdocument,script
 .icu/$domain=cidetxt.cc
@@ -431,7 +441,7 @@ sim.xiangyanglao.cn##.media-r > a[target] > img
 ||dbt6ga5v6d15f.cloudfront.net/slf^$domain=vikacg.com
 ||imagedelivery.net^$domain=vikacg.com
 vikacg.com#%#//scriptlet('prevent-window-open', '!/external')
-huaren.live,umbooks.com#%#//scriptlet('prevent-window-open')
+123pan.cn,123865.com,huaren.live,umbooks.com#%#//scriptlet('prevent-window-open')
 cesu.ai##div[class^="money_"]
 ||cesu.ai/uploads/AdvertImages/
 codernav.com##.io-widget-ad-lunbotu
@@ -942,8 +952,6 @@ md.hkgolden.com#?##viewpage > .post:has(> :is(div[id^="div-gpt-"], .hkg-ad))
 ifeng.com#?#div[class^="index_yaowen_center"] div[class^="index_news_list_"]:has(a[target="_blank"] + img[src^="https://x0.ifengimg.com/feprod/"])
 dcard.tw#?#div[role="main"] div[class^="atm_26_"]:has(> div[class^="atm_26_"] > div[style="min-height:90px"] > div[id^="div-gpt-ad"])
 jiayongluyou.com#?#.widget_html_myimg:has(> ins.adsbygoogle)
-sogi.com.tw#?#.editable > div.text-center:has(> div.d-inline-block > div[id^="div-gpt-ad"])
-sogi.com.tw#?##main > div.container:has(> div#ad)
 csgoob.com#?#div[class^="dark:shadow-none"]:has(> div.ant-carousel)
 csgoob.com#?#div[class^="dark:shadow-none"]:has(> div.ant-ribbon-wrapper)
 csgoob.com#?#div[class^="dark:shadow"]:has(> a[href^="https://www.k7csgo.com/"][target="_blank"])
@@ -1441,7 +1449,9 @@ sohu.com##a[href*="_Click_Flow_recommend_"]
 coolsaid.com##iframe[src="http://coolsaid.com/gmifr_lei.html"]
 ||suibianlu.com/zb_users/ad/
 zhidao.baidu.com###qb-content div.businessvip-wrapper
-sogi.com.tw##div[class="row my-2 ad-slot-970"]
+sogi.com.tw##.ad-slot-970
+sogi.com.tw###main > div.container:has(> div#ad)
+sogi.com.tw##.editable > div.text-center:has(> div.d-inline-block > div[id^="div-gpt-ad"])
 surirt.com,520cc.cc,v.5278.mobi,jizz99.com,bonbonyou.com,in99.org,av99.us,jav777.xyz,520call.me,hboav.com###inplayer
 finance.sina.com.cn##div[data-sudaclick="right_ads2_p"]
 finance.sina.com.cn##.tg_bank_top
@@ -2260,6 +2270,10 @@ netfly.*,netfly.tv##div[class*="tt-"] > a[target="_blank"] > img
 netfly.*,netfly.tv##div[class*="tt-"] > a[target="_blank"] + span.tt-icon-close
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219444
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210237
+huavod.cc,huavod.top,huavod.net,huavod.com,huaren.live##a[href="/advertiser"]
+huavod.cc,huavod.top,huavod.net,huavod.com,huaren.live##.weixin
+huavod.cc,huavod.top,huavod.net,huavod.com,huaren.live##.slide-nav-list a[target="_blank"]:not(a[href^="/"])
+huavod.cc,huavod.top,huavod.net,huavod.com,huaren.live##.swiper-wrapper > div.swiper-slide:has(a[target="_blank"]:not(a[href^="/"]))
 ||static.okokserver.com/uploads/lesi/$xmlhttprequest,redirect=nooptext,domain=huaren.live|huavod.net|huavod.com|huavod.top|huavod.cc
 huavod.cc,huavod.top,huavod.net,huavod.com,huaren.live#%#//scriptlet('trusted-set-constant', 'ConFig.config.ads', '{"pause":{"state":{}}}')
 ! TODO: remove hints when this issue is resolved - https://github.com/AdguardTeam/Scriptlets/issues/517
