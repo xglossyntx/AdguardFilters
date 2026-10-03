@@ -14,6 +14,13 @@ $xmlhttprequest,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.l
 !
 !
 !
+marmiton.org##.adslot__container
+kami-labs.fr##div[id^="kl-ad-"]
+kami-labs.fr##div[class^="kl-fs-ad-"]
+||kami-labs.fr/wp-content/uploads/*/ad-
+||kami-labs.fr/wp-content/plugins/autoarticle-receiver/assets/js/house-ads.js
+||kami-labs.fr/wp-content/plugins/autoarticle-receiver/assets/js/ads-widget.js
+footmercato.net##.article__iframe--dailymotion-sticky
 femmeactuelle.fr##.article-outbrain
 femmeactuelle.fr##div[class]:has(>[data-placeholdertext] + div:last-child)
 femmeactuelle.fr##div[class*=" "]:has(>[data-introtext])
@@ -174,7 +181,7 @@ lefigaro.fr#?#.fig-footer-ranking > div.fig-grid4:has(> span.fig-grid4__main-tit
 ||widget.betin.ai/get/geny
 futura-sciences.com##.ad-parent-billboard
 futura-sciences.com##.ad-parent-halfpage
-coupdepouce.com,tvaplus.ca##div[data-testid="ad-container"]
+tvasports.ca,coupdepouce.com,tvaplus.ca##div[data-testid="ad-container"]
 tesla-mag.com##.sidebar-inner-wrap > section[id^="block-"]
 dealabs.com##div[id$="FuseZonePortal"]
 moneyvox.fr##.main div[class]:has(> img[mam-campaign="Ban"])
