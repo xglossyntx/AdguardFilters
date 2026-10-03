@@ -17,6 +17,24 @@
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://www.kojima.net/ec/index.html blank recommendation
+@@||bvr.ast.snva.jp/beaver.js$domain=kojima.net
+! https://github.com/AdguardTeam/AdguardFilters/issues/242813
+@@||cdn.petametrics.com/*-nbc.js?ts=$domain=bringmethenews.com|athlonsports.com|paulickreport.com|mmaweekly.com
+! https://github.com/tofukko/filter/issues/112
+@@||googletagmanager.com/gtm.js$domain=shonenjumpplus.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/242234
+@@||bookshop.org/astro-assets/google-analytics.*.js$domain=bookshop.org
+! https://github.com/AdguardTeam/AdguardFilters/issues/242142
+comed.com#%#//scriptlet('set-constant', 'setupGoogleAnalytics', 'noopFunc')
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||blob.core.windows.net/comed/src/js/google-analytics.js$domain=comed.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/242086
+@@||integrations.fitanalytics.com/shop/bergfreunde/pdp.js$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
+@@||widget.fitanalytics.com/widget_zepto.js$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
+@@||widget.fitanalytics.com/widget/api/$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
+! https://github.com/AdguardTeam/AdguardFilters/issues/241523
+@@||data.tm-awx.com$domain=gloucestershirelive.co.uk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241300
 @@||rj.com/layouts/system/VisitorIdentification.js$domain=rj.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241161
@@ -87,6 +105,9 @@
 @@.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
 ! https://gall.dcinside.com/mgallery/board/view/?id=adguard&no=11021&page=1
 @@||static.cloudflareinsights.com^$domain=quasarzone.com,script
+! https://github.com/AdguardTeam/AdguardFilters/issues/241516
+@@||feliz.data.tm-awx.com^$domain=cheshire-live.co.uk
+@@||feliz-web.data.tm-awx.com^$domain=cheshire-live.co.uk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235154
 @@||feliz.data.tm-awx.com^$domain=football.london
 @@||feliz-web.data.tm-awx.com^$domain=football.london
@@ -3189,9 +3210,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 ||google-analytics.com/analytics.js$script,redirect=google-analytics,important,domain=biomedglobal.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/61456
 @@||googletagmanager.com/gtm.js$domain=filgoal.com
-! https://github.com/AdguardTeam/AdguardFilters/issues/60961
-!+ PLATFORM(ios, ext_android_cb, ext_safari)
-@@||secure.quantserve.com/quant.js$domain=fruitlab.com
 ! https://github.com/AdguardTeam/AdguardFilters/pull/61240
 @@||googletagmanager.com/gtag/js$domain=klix.ba
 ! https://github.com/AdguardTeam/AdguardFilters/issues/60887
