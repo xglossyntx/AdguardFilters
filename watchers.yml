@@ -4,7 +4,7 @@ sites:
     force_search_ahead: true
     last_known_mirror: gmatv61.live
     failed_since: 2026-09-03 19:11
-    failed_days: 37
+    failed_days: 38
     potentially_dead: true
   Flixer(flixer.*):
     last_known_mirror: flixer.gd
@@ -159,16 +159,16 @@ sites:
     success_since: 2026-08-20 07:20
   Askimyavas (askimyavas*.live):
     initial_domain: askimyavas.com
-    last_known_mirror: askimyavas177.live
-    success_since: 2026-08-06 01:37
+    last_known_mirror: askimyavas199.live
+    success_since: 2026-10-10 22:07
   Yavasgir (yavasgir*.live):
     last_known_mirror: yavasgir136.live
     accept_antibot: true
     force_search_ahead: true
     success_since: 2026-09-01 13:14
   Dahahizli (dahahizli*.live):
-    last_known_mirror: dahahizli156.live
-    success_since: 2026-10-09 13:17
+    last_known_mirror: dahahizli157.live
+    success_since: 2026-10-10 22:07
   7tv (7tv*.com):
     last_known_mirror: 7tv066.com
     success_since: 2026-07-28 13:36
@@ -201,12 +201,12 @@ sites:
     # Fake Taraftarium24
     last_known_mirror: taraftarium24canlimacyayini.online
     failed_since: 2026-10-08 19:12
-    failed_days: 1
+    failed_days: 3
     potentially_dead: true
   Patron Futbol (patronfutbol*.cfd):
     last_known_mirror: patronfutbol61.cfd
     failed_since: 2026-10-07 19:12
-    failed_days: 2
+    failed_days: 4
     potentially_dead: true
   Macvardi (macvardi*.com):
     last_known_mirror: macvardi283.com
@@ -232,7 +232,9 @@ sites:
     success_since: 2026-08-07 13:30
   Kralsports HD (kralsportshd*.xyz):
     last_known_mirror: kralsportshd8.xyz
-    success_since: 2026-09-30 07:22
+    failed_since: 2026-10-10 22:07
+    failed_days: 0
+    potentially_dead: true
   KickAssAnime (kaa.*):
     # initial_domain: kaa.to
     last_known_mirror: kaa.lt
@@ -371,7 +373,9 @@ sites:
     accept_antibot: true
     force_search_ahead: true
     last_known_mirror: sampiyontv2.xyz
-    success_since: 2026-09-25 07:18
+    failed_since: 2026-10-10 22:07
+    failed_days: 0
+    potentially_dead: true
   Macbox TV (macboxtv*.xyz):
     last_known_mirror: macboxtv29.xyz
     success_since: 2026-09-17 01:24
@@ -404,7 +408,7 @@ sites:
     # initial_domain: worldfree4u.gd
     last_known_mirror: worldfree4u.expert
     failed_since: 2026-10-05 19:14
-    failed_days: 4
+    failed_days: 6
     potentially_dead: true
   Canlı Maç izle (canlimacizlemax*.top):
     accept_antibot: true
@@ -418,7 +422,9 @@ sites:
     success_since: 2026-10-09 01:35
   CôBe Phim (cobephim.*):
     last_known_mirror: cobephim.cfd
-    success_since: 2026-09-25 01:24
+    failed_since: 2026-10-10 22:07
+    failed_days: 0
+    potentially_dead: true
   dizipalorjinal (dizipalorjinal*.com):
     last_known_mirror: dizipalorjinal14.com
     success_since: 2026-10-09 19:11
