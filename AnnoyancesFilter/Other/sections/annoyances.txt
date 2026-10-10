@@ -30,6 +30,12 @@ instagram.com##._aagw:empty
 !
 !
 !
+! abcnews - related articles
+abcnews.com###FITTArticle > .FITT_Article_main div[data-testid="prism-article-body"] > div[class]:has(> div > div[data-testid="prism-card"])
+! https://github.com/AdguardTeam/AdguardFilters/issues/242313
+milliard.tatar##.main__icons__dzen
+! https://github.com/AdguardTeam/AdguardFilters/issues/242078
+otonano-shumatsu.com##.article_news a[href^="https://page.line.me/oa-oto-shu?"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/240263
 comparema.ru##.timeout__vw-location-topright
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241301
@@ -130,8 +136,8 @@ muyinteresante.okdiario.com#%#//scriptlet('prevent-addEventListener', 'scroll', 
 muyinteresante.okdiario.com#%#(()=>{const t={construct:(t,e,n)=>{const r=e[0],o=r?.toString(),c=o?.includes("if(null==e?void 0:e.length)");return c&&(e[0]=()=>{}),Reflect.construct(t,e,n)}};window.IntersectionObserver=new Proxy(window.IntersectionObserver,t)})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/230145
 wccftech.com##.post-google
-! Future Publishing Limited Quay House
-fourfourtwo.com,musicradar.com,gardeningknowhow.com,techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com##aside[data-mrf-recirculation="Trending Bar"]
+! Future Publishing Limited Quay House / Future PLC
+toptenreviews.com,guitarplayer.com,goodto.com,techlearning.com,shortlist.com,realhomes.com,nexttv.com,musicradar.com,gardeningknowhow.com,countrylife.co.uk,tomsguide.com,fourfourtwo.com,musicradar.com,gardeningknowhow.com,techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com##aside[data-mrf-recirculation="Trending Bar"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229386
 thecode.media##.main-social-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228524
@@ -299,9 +305,7 @@ forbes.com#$##forbes-dv { display: none !important; }
 ctvnews.ca##.b-alert-bar-wrapper-custom
 ! Google Search - AI Overview
 google.*##div:not([role]) > div[data-hveid] div[style^="margin-bottom:"][data-hveid]:has(div[id^="folsrch"])
-google.*##style + div[data-mcpr][style^="margin-bottom:"]:has(div[data-async-type="folsrch"])
-google.*##style + div[data-mcpr][style^="margin-bottom:"] div[data-async-type="folsrch"]
-google.*##div[data-lhcontainer="1"][eid][data-ved] > div > div > div[jsname] > div[style="display:contents"]
+google.*##div[style^="margin-bottom:"] > div[style^="font-family:Google Sans,"][style*="position:relative"]:has(div[data-async-type="folsrch"])
 ://www.google.*/async/folsrch?*&async=_basejs:*,_basecomb:*&q=$xmlhttprequest
 google.*##div[data-q][data-al]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/197075
@@ -1552,6 +1556,8 @@ thebell.io#?#.post_content > p:contains(ПРОИЗВЕДЕН И РАСПРОСТ
 netprizyvu.ru#?#.currentnews__subtitle > noindex:has(> span:contains(РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ))
 novayagazeta.ru#?##article-body #materialBlock_0 > div:has(> div > p:contains(НАПРАВЛЕН ИНОСТРАННЫМ АГЕНТОМ))
 !+ NOT_OPTIMIZED
+platinonline.com,sensatsiya.com##a[href^="https://news.google.com/publications/"]
+!+ NOT_OPTIMIZED
 glasnaya.media##.wp-block-glasnaya-help
 !+ NOT_OPTIMIZED
 thebell.io##app-inoagent-banner
@@ -1817,10 +1823,10 @@ odysee.com##.file-page__secondary-content > div > div.notice-message
 ! https://github.com/AdguardTeam/AdguardFilters/issues/80281
 nickles.de#%#//scriptlet('set-constant', 'Nickles.Consent.show', 'noopFunc')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136370
-tvn.pl#%#//scriptlet("json-prune", "options.auto_play")
+tvn.pl#%#//scriptlet("json-prune", "options.auto_play playlist.options.auto_play")
 tvn.pl#%#//scriptlet("json-prune", "playlist.options.auto_play_when_visible")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78228
-tvn24.pl#%#//scriptlet("json-prune", "options.auto_play")
+tvn24.pl#%#//scriptlet("json-prune", "options.auto_play playlist.options.auto_play")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76406
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108953
 ||cdn.viqeo.tv/js/vq_starter.js$domain=teleprogramma.pro|coop-land.ru|om1.ru|pravda.ru
@@ -3180,6 +3186,7 @@ yasir252.com#%#document.addEventListener('DOMContentLoaded', function(){setTimeo
 ||trimay.ru/?
 !
 !
+codeberg.org###tou-announcement
 tv100.com##.widget-partnership
 kg.ua##section > p:has(> a[href="https://kg.ua/news/dopomozhit-kremenchuckiy-gazeti-stati-krashche-proydit-opituvannya"])
 ortadogugazetesi.com##.detailside-inner-ad
@@ -3310,7 +3317,6 @@ web.vstat.info##.install
 archive.wikiwix.com##body > img[style^="position:absolute;left:0;top:0"][style*="z-index:1000"]
 nps.org.au##.net-promoter-btn
 delfi.ee#?#.G-container > section:has(> div.G-col > div.G-row > div.social-blocks)
-platinonline.com,sensatsiya.com##a[href^="https://news.google.com/publications/"]
 kp.ua##.news-social > div.news-social__link
 m.fuhuz.com###guideModal
 menunedeli.ru##.save-recipe-blk

@@ -13,6 +13,60 @@
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/34788
+@@||cdn.zaiko.io/public/build/inertia/assets/CookieConsent-$domain=zaiko.io
+! https://github.com/AdguardTeam/AdguardFilters/issues/243747
+@@||paracord*/_nuxt/CookieNotice.$~third-party
+! https://github.com/AdguardTeam/AdguardFilters/issues/243679
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=vulture.com
+@@||cdn.cookielaw.org/consent/*.json$domain=vulture.com
+vulture.com#@##onetrust-consent-sdk
+! https://github.com/AdguardTeam/AdguardFilters/issues/243363
+@@||olymp42.hse.ru/milljs/jssupport/gdpr.js
+! https://github.com/AdguardTeam/AdguardFilters/issues/243532
+rewards.vredestein.com#@##cookieModal
+! https://github.com/AdguardTeam/AdguardFilters/issues/243333
+isratrip.net#%#//scriptlet('set-constant', 'IsraTripConsent', 'emptyObj')
+isratrip.net#%#//scriptlet('set-constant', 'IsraTripConsent.whenAllowed', 'noopFunc')
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||isratrip.net/cookie-consent.js$domain=isratrip.net
+! https://github.com/AdguardTeam/AdguardFilters/issues/243505
+world4you.com#@#.cookie-popup-overlay
+world4you.com#@#.cc-banner
+! https://github.com/AdguardTeam/AdguardFilters/issues/243305
+@@||zvaigzne.lv/static/*/frontend/
+! https://github.com/AdguardTeam/AdguardFilters/issues/243470
+@@||stright.bizris.com/*/cookie_consent_$domain=power.mhi.com
+! https://github.com/uBlockOrigin/uAssets/issues/34704
+ewoncloud.com#@##cookie-banner-container
+! https://github.com/AdguardTeam/AdguardFilters/issues/243150
+tusk.ua#@##cookies-modal
+! https://github.com/AdguardTeam/AdguardFilters/issues/242887
+@@||cdn.cookielaw.org/consent/*/otSDKStub.js$domain=stacktv.ca
+! https://github.com/AdguardTeam/AdguardFilters/issues/242488
+@@||delivery.consentmanager.net/delivery/cmp.php$domain=hasepost.de
+! https://github.com/AdguardTeam/AdguardFilters/issues/242520
+socios.com#@##cmplz-cookiebanner-container
+! https://github.com/AdguardTeam/AdguardFilters/issues/242265
+legia.com,rakow.com,kswieczysta.com,slaskwroclaw.pl,cracovia.pl,wisla-plock.pl,jagiellonia.pl#@##cookie-dialog
+! https://github.com/AdguardTeam/AdguardFilters/issues/242267
+sklep.pogonszczecin.pl#@##cookies-modal
+! https://github.com/AdguardTeam/AdguardFilters/issues/242086
+@@||cdn.cookielaw.org/consent/*.json$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
+bergfreunde.de,berg-freunde.at,berg-freunde.ch,bergfreunde.nl,bergfreunde.be,bergfreunde.it,bergfreunde.es,bergfreunde.eu,bergfreunde.dk,bergfreunde.se,bergfreunde.no,bergfreunde.fi,alpinetrek.co.uk,alpiniste.fr,campz.ie#@##onetrust-consent-sdk
+! https://github.com/AdguardTeam/AdguardFilters/issues/242060
+torpartynice.pl#@##cookie-law-info-bar
+torpartynice.pl#@##cliSettingsPopup
+! https://github.com/AdguardTeam/AdguardFilters/issues/241723
+@@||delivery.consentmanager.net/delivery/cmp.php$domain=hansaplast.de
+! https://github.com/AdguardTeam/AdguardFilters/issues/241765
+@@||consent.cookiebot.com/uc.js$domain=japan.go.jp
+@@||consentcdn.cookiebot.com^$domain=japan.go.jp
+! https://github.com/AdguardTeam/AdguardFilters/issues/241746
+@@/css/cookie-consent.css$stylesheet,~third-party,domain=fishbase.ca|fishbase.de|fishbase.mnhn.fr|fishbase.net.br|fishbase.org|fishbase.org.au|fishbase.se|sealifebase.org
+! https://github.com/AdguardTeam/AdguardFilters/issues/241750
+cloud.community.metrolinx.com#@#.consent-container
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241089
 @@||cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js$domain=sport1.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241342
@@ -681,6 +735,7 @@ lessentiel.lu#@##onetrust-consent-sdk
 ! https://github.com/uBlockOrigin/uAssets/issues/30347
 @@||cdn.cookielaw.org/consent/*.json$domain=safeway.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215157
+!+ NOT_OPTIMIZED
 @@||marunouchi.com/_nuxt/CookieBanner.
 ! https://x.com/scn21/status/1975568803984728530
 @@||xfolio.jp/lu_assets/cookie-popup.$~third-party
@@ -1363,8 +1418,6 @@ liveabout.com#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190355
 lasexta.com#@##didomi-notice
 @@||sdk.privacy-center.org^$domain=lasexta.com
-! rlptoday.de - broken embeds
-@@||delivery.consentmanager.net/delivery/cmp.php$domain=rlptoday.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/189748
 legalteam.hu#@##cookieModal
 ! order.apexhotels.co.uk - broken page
@@ -1970,8 +2023,9 @@ ubiklibri.it#@#.cookie-overlay:not(html):not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/173332
 @@||cdn-cookieyes.com^$domain=money.it
 money.it#@#.cky-consent-container
+! Iconic Media Group
 ! fix login button
-@@||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$domain=northantstelegraph.co.uk|newsletter.co.uk|portsmouth.co.uk
+@@||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$domain=nationalworld.com|3addedminutes.com|anguscountyworld.co.uk|antrimguardian.co.uk|ballycastlechronicle.co.uk|ballymenaguardian.co.uk|ballymoneychronicle.co.uk|banburyguardian.co.uk|bedfordtoday.co.uk|biggleswadetoday.co.uk|birminghamworld.uk|blackpoolgazette.co.uk|bristolworld.com|bucksherald.co.uk|burnleyexpress.net|buxtonadvertiser.co.uk|carlowlive.ie|chad.co.uk|clarelive.ie|colerainechronicle.co.uk|corklive.ie|daventryexpress.co.uk|derbyshiretimes.co.uk|derbyworld.co.uk|derryjournal.com|derrynow.com|dewsburyreporter.co.uk|doncasterfreepress.co.uk|donegallive.ie|dundalkdemocrat.ie|edinburghnews.scotsman.com|eirebheo.ie|exetertoday.co.uk|expressandstar.com|falkirkherald.co.uk|farminglife.com|fifetoday.co.uk|glasgowworld.com|halifaxcourier.co.uk|harboroughmail.co.uk|harrogateadvertiser.co.uk|hartlepoolmail.co.uk|hemeltoday.co.uk|hucknalldispatch.co.uk|inishlive.ie|ireland-live.ie|kildarenow.com|kilkennypeople.ie|lancasterguardian.co.uk|leightonbuzzardonline.co.uk|leinsterexpress.ie|leinsterleader.ie|leitrimobserver.ie|lep.co.uk|letterkennylive.ie|limerickleader.ie|lincolnshireworld.com|liverpoolworld.uk|londonworld.com|longfordleader.ie|lutontoday.co.uk|manchesterworld.uk|mayonews.ie|meltontimes.co.uk|miltonkeynes.co.uk|nenaghlive.ie|newcastleworld.com|newrydemocrat.com|newryreporter.com|newsletter.co.uk|northamptonchron.co.uk|northantstelegraph.co.uk|northdevongazette.co.uk|northernconstitution.co.uk|northernirelandworld.com|northumberlandgazette.co.uk|nottinghamworld.com|offalyexpress.ie|osuskinner.com|outlooknews.co.uk|peterboroughtoday.co.uk|portsmouth.co.uk|punchestownlive.ie|rotherhamadvertiser.co.uk|scotsman.com|seriousaboutrl.com|shieldsgazette.com|shropshirestar.com|stornowaygazette.co.uk|strabaneweekly.co.uk|sunderlandecho.com|surreyworld.co.uk|sussexexpress.co.uk|themoorlander.co.uk|thescarboroughnews.co.uk|thesouthernreporter.co.uk|thestar.co.uk|tipperarylive.ie|torbayweekly.co.uk|totallysnookered.com|tyronecon.co.uk|tyronecourier.co.uk|ulstergazette.co.uk|wakefieldexpress.co.uk|warwickshireworld.com|waterfordlive.ie|wigantoday.net|worksopguardian.co.uk|yorkshireeveningpost.co.uk|yorkshirepost.co.uk|yourlurgan.com
 ! fix cookie popup
 @@||tweakers.net/*/styles/components/cookiebar/cookie_bar.
 ! platform.twitter.com/widgets/tweet_button.html
@@ -3029,8 +3083,6 @@ frag-machiavelli.de#@##cookie-law-info-bar
 @@||ansa.it/sito/js/cookie_wall.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136428
 bricklink.com#@#.cookie-notice:not(body):not(html)
-! https://github.com/AdguardTeam/AdguardFilters/issues/136371
-@@||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$domain=miltonkeynes.co.uk
 ! https://github.com/uBlockOrigin/uAssets/issues/15883
 coolpc.tw#@##mycookie
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136230
@@ -4374,6 +4426,7 @@ smythstoys.com#@#.cookiePolicy:not(body):not(html)
 @@||cookiebot.com^$domain=statisticshowto.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/77573
 teb.pl#@##cookieModal
+! https://github.com/AdguardTeam/AdguardFilters/issues/243292
 ! https://github.com/AdguardTeam/AdguardFilters/issues/107066
 ! https://github.com/AdguardTeam/AdguardFilters/issues/79133
 ! incorrect blocking (video player doesn't work)
@@ -4381,6 +4434,7 @@ teb.pl#@##cookieModal
 @@||sdk.privacy-center.org/ui-gdpr-*.js$domain=naszemiasto.pl|dziennikbaltycki.pl|dzienniklodzki.pl|dziennikpolski24.pl|echodnia.eu|expressbydgoski.pl|expressilustrowany.pl|gazetakrakowska.pl|gazetalubuska.pl|gazetawroclawska.pl|gk24.pl|gloswielkopolski.pl|gol24.pl|gp24.pl|gra.pl|gs24.pl|kurierlubelski.pl|motofakty.pl|nowiny24.pl|nowosci.com.pl|nto.pl|polskatimes.pl|pomorska.pl|poranny.pl|sportowy24.pl|strefaagro.pl|strefabiznesu.pl|stronakobiet.pl|telemagazyn.pl|to.com.pl|wspolczesna.pl|stronazdrowia.pl|strefaedukacji.pl|stronapodrozy.pl|stronakuchni.pl|gra.pl|e-ogrodek.pl|shownews.pl|strefaobrony.pl|e-budownictwo.pl
 @@||sdk.privacy-center.org/*/loader.js$domain=naszemiasto.pl|dziennikbaltycki.pl|dzienniklodzki.pl|dziennikpolski24.pl|echodnia.eu|expressbydgoski.pl|expressilustrowany.pl|gazetakrakowska.pl|gazetalubuska.pl|gazetawroclawska.pl|gk24.pl|gloswielkopolski.pl|gol24.pl|gp24.pl|gra.pl|gs24.pl|kurierlubelski.pl|motofakty.pl|nowiny24.pl|nowosci.com.pl|nto.pl|polskatimes.pl|pomorska.pl|poranny.pl|sportowy24.pl|strefaagro.pl|strefabiznesu.pl|stronakobiet.pl|telemagazyn.pl|to.com.pl|wspolczesna.pl|stronazdrowia.pl|strefaedukacji.pl|stronapodrozy.pl|stronakuchni.pl|gra.pl|e-ogrodek.pl|shownews.pl|strefaobrony.pl|e-budownictwo.pl
 @@||sdk.privacy-center.org/sdk.*.js$domain=naszemiasto.pl|dziennikbaltycki.pl|dzienniklodzki.pl|dziennikpolski24.pl|echodnia.eu|expressbydgoski.pl|expressilustrowany.pl|gazetakrakowska.pl|gazetalubuska.pl|gazetawroclawska.pl|gk24.pl|gloswielkopolski.pl|gol24.pl|gp24.pl|gra.pl|gs24.pl|kurierlubelski.pl|motofakty.pl|nowiny24.pl|nowosci.com.pl|nto.pl|polskatimes.pl|pomorska.pl|poranny.pl|sportowy24.pl|strefaagro.pl|strefabiznesu.pl|stronakobiet.pl|telemagazyn.pl|to.com.pl|wspolczesna.pl|stronazdrowia.pl|strefaedukacji.pl|stronapodrozy.pl|stronakuchni.pl|gra.pl|e-ogrodek.pl|shownews.pl|strefaobrony.pl|e-budownictwo.pl
+@@||sdk.privacy-center.org/sdk/*.js$domain=naszemiasto.pl|dziennikbaltycki.pl|dzienniklodzki.pl|dziennikpolski24.pl|echodnia.eu|expressbydgoski.pl|expressilustrowany.pl|gazetakrakowska.pl|gazetalubuska.pl|gazetawroclawska.pl|gk24.pl|gloswielkopolski.pl|gol24.pl|gp24.pl|gra.pl|gs24.pl|kurierlubelski.pl|motofakty.pl|nowiny24.pl|nowosci.com.pl|nto.pl|polskatimes.pl|pomorska.pl|poranny.pl|sportowy24.pl|strefaagro.pl|strefabiznesu.pl|stronakobiet.pl|telemagazyn.pl|to.com.pl|wspolczesna.pl|stronazdrowia.pl|strefaedukacji.pl|stronapodrozy.pl|stronakuchni.pl|gra.pl|e-ogrodek.pl|shownews.pl|strefaobrony.pl|e-budownictwo.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/77064
 @@||quantcast.mgr.consensu.org^$domain=standard.co.uk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76579

@@ -6,6 +6,14 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/243495
+@@||archive.*^$removeparam
+@@||wayback.archive-it.org^$removeparam
+@@||warp.ndl.go.jp^$removeparam
+@@||gyo.tc^$removeparam
+@@||megalodon.jp^$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/242046
+@@||eneba.com^$removeparam=utm_source
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235814
 @@$removeparam=utm_medium,domain=hobbygames.ru
 @@$removeparam=utm_campaign,domain=hobbygames.ru
@@ -16,6 +24,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/236387
 @@||shopify.com/authentication/$removeparam=analytics_trace_id
 ! https://github.com/AdguardTeam/AdguardFilters/issues/230641
+@@/e/er?$removeparam=elqCampaignId,domain=s1740541080.t.eloqua.com|app.econnect.utexas.edu|clk.texaslonghorns.com
 @@/e/er?$removeparam=elqTrackId,domain=s1740541080.t.eloqua.com|app.econnect.utexas.edu|clk.texaslonghorns.com
 @@/e/er?$removeparam=elq,domain=s1740541080.t.eloqua.com|app.econnect.utexas.edu|clk.texaslonghorns.com
 @@/e/er?$removeparam=elqaid,domain=s1740541080.t.eloqua.com|app.econnect.utexas.edu|clk.texaslonghorns.com
