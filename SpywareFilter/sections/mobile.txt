@@ -101,6 +101,7 @@ $app=com.miui.analytics
 dynamic-report-api.appsflyersdk.com^
 ||privacy-sandbox.appsflyersdk.com^
 -pia.appsflyersdk.com^
+.skadsdkless.appsflyersdk.com^
 -skadsdkless.appsflyersdk.com^
 -adrevenue.appsflyersdk.com^
 -attr.appsflyersdk.com^
@@ -172,6 +173,13 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||api-sdk-tracking.beaconbank.jp^
+||api-sdk.beaconbank.jp^
+||stream-log.profilepassport.jp^
+||nt-stream-log.profilepassport.jp^
+||pp3-sdk-api.profilepassport.jp^
+||pp3-sdkdata-v2-ut.profilepassport.jp^
+||metrics.li^
 ||bid.ctv.house^
 ||log.calomeal.com^
 ||visit-server.inmobi-choice.io^
@@ -219,7 +227,6 @@ dlsdk.appsflyer.com^
 ||beacon.ztgame.com^
 ||api-log-upload.wenext.technology^
 ||events-noneu.truecaller.com^
-||log-*.isnssdk.com^
 ||profiler-collector.dalyfeds.com^
 ||reporttk.com^
 ||log-*.isnssdk.com^
@@ -303,7 +310,6 @@ dlsdk.appsflyer.com^
 ||news-sports-events.apple.com^
 ||track.applicaster.com^
 ||hb-mob2.optiword.com^
-||tracking.geo.*.amazonaws.com^
 ||telemetry.doxo.com^
 ||sensorsdata-datasink.stardust-tv.com^
 ||event-api-cs.stardust-tv.com^
@@ -611,7 +617,6 @@ d4?appid*type*
 ||impression.link^
 ||rm.aarki.net^
 ||use-cr.svr-algorix.com^
-||gnsnpaw.com^
 ||log.jackpotmasterslots.com^
 ||jpush.io^
 ||datacollector-drru.dt.dbankcloud.ru^
@@ -694,9 +699,6 @@ d4?appid*type*
 ||events-api.towneers.prod.data.krmt.io^
 ||event.karrotmarket.com^
 ||iot-in-logser.realme.com^
-||push-api.topaz-analytics.com^
-||analytics.wildlifestudios.com^
-||opentelemetry-collector.shared-services.us-east-1.general.prod.wildlife.io^
 ||rabbit.meitustat.com^
 ||mediation.mwmadnetworks.com^
 ||meitustat.com^
@@ -787,7 +789,6 @@ d4?appid*type*
 ||cws-hulu.conviva.com^
 ||vik-analytics.moonactive.net^
 ||report.apkpure.net^
-||report.*.gbqofs.io^
 ||grs.hicloud.com^
 ||logbak.hicloud.com^
 ||iot-eu-logser.realme.com^
@@ -1359,7 +1360,6 @@ d4?appid*type*
 !
 ! UC Browser
 ||woodpecker.uc.cn^
-||track.uc.cn^
 ||applog.uc.cn^
 ||dispatcher.upmc.uc.cn^
 ||gjapplog.uc.cn^
