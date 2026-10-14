@@ -54,6 +54,7 @@ msn.com###eubanner
 ! START: Yandex
 !
 ! ya.ru - main page
+ya.ru##main > div[class^="body_"][class$="_feed_yes"]
 ya.ru##.search3__inner-wrapper > div > section[class*="reasoning-"][class*="_on-top"]
 ya.ru##.link-bro
 ya.ru##div[class^="search"][class$="doodle"]
@@ -63,6 +64,7 @@ ya.ru##.market-feed
 ya.ru##.message-promo
 ya.ru##.search3__inner > div.link-bro
 ! Own services promo above or below the search
+ya.ru##main > div[class^="body_"] > div:has(> section[style*="-sectian-items-count:"])
 yandex.com.tr##.body__view > div[class^="services-"]:has(> div[class] > div[class] > div[class$="_content"] > a[aria-labelledby="ad-mark__mark"])
 ya.ru,yandex.*##.reasoning-section
 ! Alice promo under the search bar
@@ -78,6 +80,7 @@ ya.ru,yandex.*##.simple-popup__overlay_shown_true
 ! Yandex.Search
 yandex.com.tr##.IntYandexAIPromo
 ya.ru#?#.search3__inner-wrapper > div:matches-attr(/^data-cap/)
+[$path=/products]ya.ru,yandex.*##.EProductCard-Item_type_ecom-recommendations
 [$path=/search]ya.ru,yandex.*##.EProductSnippet2_offerAdv
 [$path=/search]ya.ru,yandex.*#?#.main__carousel-item_type_product_gallery[data-collection-id]:has(> div[class] > div.Root > article > div.ProductGalleryHeader > div[class*="HeaderItem"] > span:contains(Промо))
 [$path=/search]ya.ru,yandex.*##.AdvOffers
@@ -104,6 +107,11 @@ yandex.com.tr#@#.DistributionPopup
 ya.ru,yandex.*##.AliceFabPromo
 !
 ! Yandex.Afisha
+!
+! Yandex.Dostavka
+[$path=/route]dostavka.yandex.ru##.antltbv
+[$path=/route]dostavka.yandex.ru##.RumObservableRoot > div > div[dir="ltr"] ~ div[class] > div[class] > div[class] > div[class]:has(> div[class][tabindex] > section[class] > div[class] > div[class] > div[class] > div[style*="-urbanads-"])
+[$path=/route]dostavka.yandex.ru##.RumObservableRoot > div[style] > div > div[class][style] > div[class] > div[class] > div[class] > div[class] > div[class]:has(> section[class] > div[class] > div[class] > div[class] > div[style*="-urbanads-"])
 !
 ! Yandex.Disk
 disk.yandex.*##div[class^="icloud-transfer-promo"]
@@ -139,6 +147,7 @@ yandex.*##.meteum-promo
 [$path=/maps]yandex.*##.business-card-view__main-wrapper div.card-offer-view
 [$path=/maps]yandex.*##.business-card-title-view__advert
 [$path=/maps]yandex.*##.business-card-title-view__actions .button._view_advertisement
+[$path=/maps]yandex.*##.map-controls__group > div.map-controls__additional-button:has(> a[href^="https://yandex.ru/maps-promo/"])
 !
 ! Yandex.Music
 music.yandex.*##div[class*="NavbarDesktopAnimatedPlusBar_root___"]
@@ -157,6 +166,8 @@ market.yandex.ru#$##HeaderDesktop { margin-top: 0 !important; }
 market.yandex.ru#$#div[data-apiary-widget-name="@monetize/PromoStreamer"] { display: none !important; }
 market.yandex.ru##.RecomLayout > div[class]:has(> div[data-apiary-widget-name="@marketfront/RecomEntity"] div[data-baobab-name="recomMadv"])
 market.yandex.*#$##MainHeader { margin-top: 0 !important; }
+market.yandex.*##div[data-apiary-widget-name="@card/ShowPlaceVTBPromo"]
+market.yandex.*##div[data-apiary-widget-name="@monetize/VisibilityLoaderHeroCarousel"]
 market.yandex.*##div[data-apiary-widget-name="@monetize/Streamer"]
 market.yandex.*##div[data-apiary-widget-name="@monetize/HeroCarousel"]
 market.yandex.*##div[data-apiary-widget-name="@marketfront/RecomMediaAdv"]
@@ -207,15 +218,81 @@ apteki.yandex.ru##div[data-qa="BannerSlider"]
 [$path=/games]yandex.*##header + main.stack > div > div[class*="-wrapper_promo"]
 !
 ! Kinopoisk
+hd.kinopoisk.ru#%#//scriptlet('trusted-click-element', 'body.body div.ReactModalPortal > div.ReactModal__Overlay div[data-tid="NotificationLegalButton"] ~ button[data-tid="CloseButton"]')
 www.kinopoisk.ru#$#header[class][style*="--header-height:150px"] > div > img { display: none !important; }
 www.kinopoisk.ru#$#header[class][style*="--header-height:150px"] > div.header-navigation { margin-top: 0 !important; }
-www.kinopoisk.ru##div[class^="trailer-promo"]
 www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-footer-promotion.subscription-title"])
 !
 ! END: Yandex
 !
 ! SECTION: Self-promo - Regular rules
 !
+tv100.com##.bottom-video
+crypto.ru##.wprv-box
+ru.getflix.com###notificationContainer
+cash-ntt.kontur.ru##div[data-tid$="PresentBanner"]
+strawberrynet.com#%#//scriptlet('set-cookie', 'exitIntentFirstEntryShown', 'true')
+strawberrynet.com#%#//scriptlet('set-cookie', 'exitIntentShown', 'true')
+strawberrynet.com##.mulltr-1x7i9zg
+strawberrynet.com###__next > div.MuiBox-root:has(> div.swiper)
+controld.com##.ctablock
+bankier.pl##.o-article-content > .o-recommended-link-multiobject:has(> a[href^="https://sklep.bankier.pl/"])
+bbc.com##div#subliminal-banner
+salon.com##.sub_promo
+buyhatke.com##.w-full:has(> div[class] > div.grid > div.bg-white > a[href="https://a.buyhatke.com/homePageBBd"])
+buyhatke.com##.relative:has(> div[class] > a[href="https://a.buyhatke.com/crossPlatformInstallproduct"])
+ratatype.com##a[href="/es/ratatype-plus/"]
+ssg.com##.ssgcard_swiper
+www.ssg.com###lp_gnbTopBanr
+ratatype.com##.not-prose
+ratatype.com###header > div.message
+trafficnews.jp##.premium-banner-sp
+emmikochteinfach.de##section:has(> div.container a[href="https://emmikochteinfach.de/mein-kochbuch/"])
+emmikochteinfach.de##section.section_author:has(> div.container > div.author-block)
+askul.co.jp###itemRefineSearch-searchResultBody > div.js-searchWord > ul.o-grid_inner > li.o-grid_cell:has(> div[class$="sponsored"])
+machineryline.ua##.header-bn-wrapper
+machineryline.*##.create-sale-widget
+otonanswer.jp##.custom-button-wrap
+dotabuff.com##.footer-nav-secondary > a[href="https://elo-entertainment-inc.breezy.hr"]
+||thetimes.com.au/images/welcome.png$domain=thetimes.com.au
+||thetimes.com.au/images/*/promo.jpg$domain=thetimes.com.au
+||thetimes.com.au/images/ws.jpg$domain=thetimes.com.au
+easypay.ua##.header-promo
+startpage.com#%#//scriptlet('trusted-set-local-storage-item', 'sp_ad_free_promo_card_dismissed', '$now$')
+glam.jp##.advads-entity-placement:has(> a[href="https://www.glam.jp/shortstoryline_cp/"])
+glam.jp##.article-banners
+tychy24.net##.cs-sidebar__inner > .widget_media_image
+tychy24.net##img[alt="Zamów swój materiał sponsorowany na Tychy24.net. Pokaż swoją firmę"]
+mtsdengi.ru##div[data-testid="container"] > div[data-testid="container-body"] > a[href^="https://mtsdengi.ru/karti/credit-mts-dengi/?"]
+digitalocean.com##div[class^="SocialSidebarStyles__StyledSocialSidebarInner"] > div[class^="SalesCTAStyles"]
+m.wavve.com##.single-banner-container
+wavve.com##.multi-band-banner
+kami-labs.fr###kl-tpb-bottom
+hmall.com#%#//scriptlet('trusted-set-cookie', 'checkGradePup', 'done')
+aol.com###m-dispatcher-sticky-footer
+romstal.ro###cs-popup-overlay
+popcornmovies.ac##.inset-x-3.fixed
+wallpapers.com#%#//scriptlet('trusted-set-attr', 'button[class="cd-free-dl-btn"][data-dl-gate="free"]', 'data-dl-gate', 'premium')
+3dmgame.com##.Content_L > a[href^="https://mall.3dmgame.hk/?"]
+xenospectrum.com##aside.article-inline-nudge:has(> a[href="/support/?from=article_inline_nudge"])
+xenospectrum.com##aside.article-cta:has(> div.article-cta__state--supporter)
+wallpapers.com##.wpc-topad--house
+wallpapers.com##.wpc-ad--filled
+wallpapers.com##.wpc-internal-ad
+wallpapers.com##.td-side-premium
+milliard.tatar##.widget-any
+bunshun.jp##.is-fixed-pr
+thecyberexpress.com##.thecy-entity-placement
+deepl.com##.below-navigation-banner-wrapper
+deepl.com##div[class^="homeExperience-module"]
+studianclass.com##.btn-purchase
+aptoide.com##div[page="appcoins-bundle"]
+gori.me##.post-reactions
+gori.me##.gorime-cta
+komputronik.pl###sidebar-banner
+lewdcorner.com##div.stfrtDonateBubble
+mercadobitcoin.com.br##a[href^="https://www.mercadobitcoin.com.br/campanhas/"] > img
+vaughn.live##.vs_v9_footer3_goal
 sport1.de##.wp-block-image > a[href*="-partner-brands"][target="_blank"] > img
 estadao.com.br##.paragraph > div[class^="styles__TouchpointContainerStyled"]:has(> .container-lazy > .touchpoint-banner)
 estadao.com.br##.testeira-assine
@@ -237,7 +314,7 @@ brasilescola.uol.com.br##.side-ferramentas-area-lista
 saechsische.de##div[data-element-selector="main-content"] > div[class*="AutomaticWeekliWidgetstyled"]
 newstsukuba.jp##.nts-banner
 navalny.com##footer.bg-bg-tertiary > div.mx-auto > a.bg-gradient-turquoise[href*="/donate"]
-kinogo.org##.cshflow
+uakinogo.org,kinogo.org##.cshflow
 kinogo.tm##.kng-rekl
 newsnow.com##.site-ribbon--essential-promo
 fnn.jp##.m-special > .m-article-item:has(> .m-article-item__link > .m-article-item-imgwrap > span.m-special__label)
@@ -298,7 +375,7 @@ deview.co.jp##.banner-area-rs
 catho.com.br##.box_ad_highlight_candidate
 novayagazeta.eu##div[data-donate-widget="true"]
 footymetrics.com##aside > div[style]:has(> div.px-4 a[href="/pricing"])
-mantan-web.jp##.hebirote__wrap
+mainichikirei.jp,mantan-web.jp##.hebirote__wrap
 baseball.yahoo.co.jp##body > div.bb-wrapper > #inf:has(> .sn-modNotice > .sn-notice--annapurna)
 baseball.yahoo.co.jp##.bb-centerColumn > #inf:has(> .sn-modNotice > .sn-notice--annapurna)
 nikkei.com##div[class^="trendWatch"]
@@ -498,7 +575,6 @@ chibanippo.co.jp##.block-views-blockteikimono-views-block-2
 kosht.media##.rek > a[href="https://kosht.media/rating/"]
 kyivindependent.com##div[class^="MembershipCampaignArticleBanner"]
 kyivindependent.com##div[class^="MembershipCampaignPopupBanner"]
-kyivindependent.com###support-us-article-banner-slot
 sporty.com##a[href^="https://www.sportybet.com/"]
 ftm.nl##.trust-nugget-pp
 ftm.nl##.newsletter-pp
@@ -556,7 +632,6 @@ bubilet.com.tr#%#//scriptlet('trusted-set-local-storage-item', 'superTicketGuest
 wildberries.ru##.main-page__tv-media-placements
 temu.com###RecommendedRef div[data-id="list0"] > div[class^="columnWrap-"] > div[class][data-uniqid]:has(> div[class^="item-"] div[class^="adTag-"])
 check.lenta.com###otzyv
-kinzhal.media##div[class^="float-link-"]
 igroray.ru##.announcement-bar
 ishiguro-gr.com###block-ishiguro-content > p:has(> a[href] img)
 xvideos.es,xvideos.com,xnxx.*,xv-ru.com,xnxx-ru.com##.premium-results-line
@@ -748,7 +823,7 @@ twitter.com,x.com##article[data-testid="tweet"]:has(path[d$="10H8.996V8h7v7z"])
 mail.google.com##div[data-pep-id="global-pep-gmail"]
 justwatch.com##.mrr-banner
 justwatch.com##.removal-container
-computerbase.de##.promobar
+mediaexpert.pl,computerbase.de##.promobar
 arkm.com##div[class*="mfaBannerContainer"]
 xn--pckua2a7gp15o89zb.com##.s-modal-trigger_cmOnboarding
 manzoku.or.jp###scrollbox-non
@@ -1069,7 +1144,6 @@ tridge.com##a[href^="/tracking-redirect/"]
 ||cdn.tridge.com/ad_campaign_media/
 tvmaze.com##.cinereus
 tvmaze.com##.columns > section:has(> div.cell > a.cinereus)
-sai-zen-sen.jp##article[id^="comic-"] > aside:has(> div.misc > p > a[href^="https://www.amazon.co.jp/"])
 avito.ru##.js-item-view-main > div[class][style^="--module-spacer-column-gap"]:has(> div[style^="--module-spacer-slot"] button[data-marker="saleBanner/button"])
 blog.bytebytego.com##.available-content > div.body > p[data-attrs*="https://bit.ly/Redpanda_092925"]
 quackr.io##app-enterprise-banner
@@ -2044,7 +2118,6 @@ funabashi-tsushin.com###main > a[href="https://funabashi-tsushin.com/banner_ads"
 fontanka.ru##a[href^="https://www.fontanka.ru/longreads/74112365/"]
 fontanka.ru##div[data-adv-mark]
 fontanka.ru##section[class^="sliderWrap_"]:has(> div[class^="slider_"] > div[class^="wrap_"] > div[class^="companyNewsItem_"])
-service.smt.docomo.ne.jp##.ad_height
 github.com##.feed-right-sidebar > div:has(> div.js-notice)
 bilibili.com##.feed-card:has(a[href*="cm.bilibili.com"][data-target-url*="gaoneng.bilibili.com"])
 tweakers.net##.useVisitedState.nonspot.headlineItem
@@ -2169,7 +2242,6 @@ dhbr.diamond.jp#$#.g-header-ad { display: none !important; }
 dhbr.diamond.jp#$#header { margin-top: 0 !important; }
 dhbr.diamond.jp#$#.g-nav__list { top: 87px !important; }
 myfanserials.net##noindex > div[style="text-align: center;"]
-world-tt.com##.column_pin.mobile_width100
 /\/image_pdf\/Ad\/1-News\/1-0_(%E5%88%A5%E5%86%8A%E4%BA%94%E8%BC%AA%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC|tk_goods_3AD220921|jasupo_3AD210113)\.(jpg|gif)/$domain=world-tt.com
 cloud.baidu.com##div[class*="width"][class$="-center"] a[href^="https://cloud.baidu.com/product/wenxinworkshop?"]
 ||bce.bdstatic.com/p3m/common-service/uploads/dibu_edc2214.png
@@ -2325,7 +2397,6 @@ cumhuriyet.com.tr##.right-row > a[href="https://tatil.cumhuriyet.com.tr"]
 nishi2.jp###block-3 > div > a[href^="https://nishi2.jp/ad/"]
 billboard.com##.lrv-a-wrapper:has(> div.bb-pro-promotional-banner)
 support.qq.com##.promotionbit
-||gamewith.jp/ad/
 gamewith.jp##.walkthrough-gamewith-announces.gtm-ga4-walkthrough-imp-event
 efe.com###media_image-2
 pokebattler.com##a[href="https://www.patreon.com/join/pokebattler?"]
@@ -2976,7 +3047,6 @@ pcmanabu.com###block-4
 ||ecbeing.net/cms/images/headline/kokuchi.jpg
 ||minnano-anime.com/p/minnanovideo_bn634.png
 /minnanovideo_bn300.png$domain=minnano-anime.com|minnano-camera.com
-jorudan.co.jp##.com_lp_frame
 minacolor.com###shopify-section-dynamic-column-banner
 minacolor.com##.p-advertisement
 businessinsider.de##.piano__footer
@@ -3728,7 +3798,7 @@ neilpatel.com##.widget-glbg
 iptv.team###promooverlay
 answers.microsoft.com##.rail-banner
 in.news.yahoo.com###module-featurebar
-rlsbb.ru##.information
+rlsbb.ru,rlsbb.cc,rlsbb.to,rlsbb.in##.information
 ruhrnachrichten.de##.topOfferContainer
 ruhrnachrichten.de##img[title="BVB-Abo"]
 peoplematters.in##.w-news-stand
@@ -4122,6 +4192,8 @@ pixiv.net##section.popular-introduction
 vk.com###lovina_ads_row
 v.qq.com#?#div.nav-wrap > div > div:has(> a[href^="https://iwan.video.qq.com"])
 !+ NOT_OPTIMIZED
+kinzhal.media##div[class^="float-link-"]
+!+ NOT_OPTIMIZED
 rakko.tools###headerAnnounceArea
 !+ NOT_OPTIMIZED
 iflyer.tv###PushDownFeature
@@ -4140,6 +4212,10 @@ just-auto.com##.in-article-premium-insights
 ! !SECTION: Self-promo - Regular rules
 !
 !
+! shellshock.io and mirrors
+! https://shellshock.io/unblocked/json/proxy-list.json
+##.cta-welcome-bundle
+##.cta-vip-promo
 ! ozon.ru
 ozon.ru##div[data-widget-disallow] > div.rtb_n6
 ozon.ru##div[style*="_counter_embed_desktop_lastDayBackground_"]
@@ -6008,6 +6084,8 @@ ficbook.net##.help-box
 ficbook.net##a[class^="global-banner"][href^="https://t.me/"]
 ficbook.net##.ficfan-banner
 !
+!+ NOT_OPTIMIZED
+sai-zen-sen.jp##article[id^="comic-"] > aside:has(> div.misc > p > a[href^="https://www.amazon.co.jp/"])
 !+ NOT_OPTIMIZED
 hotokami.jp##div[data-controller="spots-lists"] > .border-b-gray-200.border-solid[onclick^="gtag"]
 !+ NOT_OPTIMIZED
