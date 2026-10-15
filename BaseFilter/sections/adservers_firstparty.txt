@@ -6,6 +6,11 @@
 ! Bad: /banner.jpg (should be in general_url.txt)
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
+||ads.1mindrama.net^
+||sa7eer.com^
+||lobe.scv.public.sse-prod-eks-euw1.futureplc.engineering^
+||gray.unlikebuck.com^
+||valentine.xhamster.*^
 ||serve.omr.com^
 ||camp.inc.com^
 ||bend.frizzsince.com^
