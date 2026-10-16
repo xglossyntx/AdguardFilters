@@ -10,6 +10,16 @@
 ! NOTE: UA rules copied to Ukrainian filter
 ! TODO: Remove not multi lang rules with .ua tld after splitting the filter (look at the end of file)
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/243621
+ani7.top,jut-su.online#%#//scriptlet('google-ima3')
+! https://github.com/AdguardTeam/AdguardFilters/issues/242938
+questtime.net#%#//scriptlet('abort-on-property-read', 'pageVars.itemAc')
+!#if (adguard_app_ios || adguard_ext_android_cb)
+questtime.net#@#.ad-unit:not(.textads)
+questtime.net#@#.ad-zone
+questtime.net#@#.ads-banner
+@@||yandex.ru/ads/system/context.js$domain=questtime.net
+!#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/240854
 ritsatv.ru#%#//scriptlet('prevent-setTimeout', 'checkAds')
 !#if (adguard_app_ios || adguard_ext_android_cb)
@@ -36,6 +46,8 @@ rr4farmtrof.com#%#//scriptlet('prevent-navigation', '?ft_client_block=1')
 ||strm.yandex.ru/vh-canvas-converted/$domain=rr4farmtrof.com
 @@||yandex.ru/ads/system/context.js$domain=rr4farmtrof.com
 @@||yandex.ru/ads/system/ap-loader.js$domain=rr4farmtrof.com
+@@||yastatic.net/partner-code-bundles/*.js^$domain=rr4farmtrof.com
+@@||yandex.ru/ads/meta/*?target-ref=$domain=rr4farmtrof.com
 !#safari_cb_affinity(privacy)
 @@||mc.yandex.ru/metrika/tag.js$domain=rr4farmtrof.com
 @@||mc.yandex.com/watch/*?wmode=*&page-url=
@@ -906,18 +918,17 @@ $script,xmlhttprequest,domain=dzen.ru|dzeninfra.ru,jsonprune=\$..[direct\, "rtbA
 dzen.ru#%#//scriptlet('remove-cookie', '/blcrm|bltsr|zmFQeXtI|JPIqApiY|computer/')
 !
 ! Dzen main page
-dzen.ru##div[data-testid="trends-entry-desktop"]
-dzen.ru##a[class*="flash-modal__marketing-"]
-dzen.ru###ya-dist-splashscreen
-dzen.ru###ya-dist-popup
-dzen.ru###ya-dist-teaser
-dzen.ru##div[class*="bannerMain"]
+dzen.ru#%#//scriptlet('abort-on-property-read', 'Object.prototype.findSsrAd')
+dzen.ru##div[class^="dzen-desktop--desktop-skeleton__"]
+dzen.ru##div[class^="dzen-desktop--horizontal-article-skeleton__"]
+dzen.ru##div[class^="dzen-desktop--feed-one-column-right-skeleton__"]
+dzen.ru##div[class^="dzen-desktop--feed-one-column-right-skeleton__card-"]
+dzen.ru##div[class^="dzen-desktop--feed-one-column__skeletonAnchor-"]
 [$path=/^\/$|\/\?/]dzen.ru###ya-dist
 dzen.ru##div[class^="dzen-desktop__widgetContainer-"] div[class*=" dzen-desktop__"] > div[style^="padding-top:"]
 ://dzen.ru^$cookie=rec-tech
 ! Under the search
-dzen.ru##div[class*="--top-micro-app__"] > div[style$="position: relative; height: 0;"] > div[style^="margin-top:"] > div:not([style])
-dzen.ru#$#div[class*="--top-micro-app__"] > div[style$="position: relative; height: 0;"] { padding-top: 0 !important; }
+dzen.ru##div[id*="MicroRoot"] > div[style] div[id][class] > div[style*="position: relative; height:"]
 ! Banners in the feed
 !
 ! Dzen News
@@ -1478,6 +1489,7 @@ eda.yandex.ru##main > div[style^="margin-bottom:"]:has(> div > div > button + di
 ||yandex-pogoda.static-storage.net/*/*/*$script,replace=/adblock//
 !
 ! Yandex.Market
+market.yandex.ru##div[data-apiary-widget-name="@monetize/HeroContentCarousel"]
 market.yandex.ru##div[data-apiary-widget-name="@monetize/HeroSlideshow"]
 market.yandex.ru##div[data-zone-name="heroBannerCarousel"]
 market.yandex.ru##div[data-apiary-widget-name="@marketfront/RecomAdv"]
@@ -1626,6 +1638,10 @@ yandex.*##.stack > div[class^="sticky-"]
 [$path=/q]yandex.*##header ~ div#page > div[class]:not([id]) > div[class*=" "]:first-child + div[class*=" "] + div[class*=" "] > div[class] > div[style^="will-change:"] > div:not([class]) > div[class]:last-child
 [$path=/q]yandex.*#$?#body.page_qArticleRoute header ~ div#page > div[class]:not([id]) > div[class*=" "]:first-child + div[class*=" "] > section[class*=" "] > div[class] + div + div > span ~ div:not(:has(> div[class] button[data-role="button"] > svg)) { height: 0 !important; }
 [$path=/q]yandex.*#$?#body.page_qQuestionRoute header ~ div#page > div[class]:not([id]) > div[class*=" "]:first-child + div[class*=" "] > section[class*=" "] > div[class] + div + div > div[class] > span ~ div:not(:has(> div[class] button[data-role="button"] > svg)) { height: 0 !important; }
+!
+! Yandex.Alice
+alice.yandex.ru##.FuturisAdvTransactionSnippet
+alice.yandex.ru##.MessageBubble-Container_component_futurisAdOnly
 !
 ! Yandex.Internet
 yandex.*##.layout__banner
