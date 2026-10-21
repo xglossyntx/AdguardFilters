@@ -147,6 +147,9 @@ giga.de#$#div[class*="ad--top"] { display: block !important; min-height: 40px !i
 ||cluster-*.cdnjquery.com^$domain=woxikon.de|notebookcheck.com|dict.cc
 ||*snigelweb-com.videoplayerhub.com^$domain=tellows.de|woxikon.de|notebookcheck.com|dict.cc
 !
+! VRM group
+hochheimer-zeitung.de,wormser-zeitung.de,mittelhessen.de,allgemeine-zeitung.de,wiesbadener-kurier.de,echo-online.de##.advertBorder
+!
 ! Common names:
 ! ##.pdb-div-gpt-footerad
 haz.de,ostsee-zeitung.de,sn-online.de,dnn.de,kn-online.de,ln-online.de,neuepresse.de,lvz.de##.pdb-div-gpt-footerad
@@ -159,7 +162,7 @@ hallo-muenchen.de,az-online.de,lokalo24.de,rosenheim24.de,kreiszeitung.de,mannhe
 ! ##.Ad
 ratgeber.bunte.de,horizont.net,vergleich.focus.de,chip.de,gutefrage.net,reisefrage.net,motorradfrage.net,autofrage.net,sportlerfrage.net,computerfrage.net,gesundheitsfrage.net,gutefrage.net,finanzfrage.net##.Ad
 ! ##.ad
-telepolis.de,finanzen.net,mainfranken24.de,jetzt.de,derwesten.de,eurosport.de,ingenieur.de,heise.de,ww-kurier.de,1prospekte.de,stadtlandflussonline.net,chefkoch.de,vogue.de,tripadvisor.de,3c.web.de,thueringen24.de,pfaffenhofen-today.de,holidaycheck.de,berlin.de,fuw.ch,allgemeine-zeitung.de,schlaukopf.de,schwarzwaelder-bote.de,aachener-zeitung.de,hamburg.de,sat1.de,abendzeitung-muenchen.de,dfb.de,gamestar.hu,ikz-online.de,nrz.de,stimme.de,waz.de,wiesbadener-kurier.de,wiesbadener-tagblatt.de,wp.de,wr.de##.ad
+4p.de,softselect.de,telepolis.de,finanzen.net,mainfranken24.de,jetzt.de,derwesten.de,eurosport.de,ingenieur.de,heise.de,ww-kurier.de,1prospekte.de,stadtlandflussonline.net,chefkoch.de,vogue.de,tripadvisor.de,3c.web.de,thueringen24.de,pfaffenhofen-today.de,holidaycheck.de,berlin.de,fuw.ch,allgemeine-zeitung.de,schlaukopf.de,schwarzwaelder-bote.de,aachener-zeitung.de,hamburg.de,sat1.de,abendzeitung-muenchen.de,dfb.de,gamestar.hu,ikz-online.de,nrz.de,stimme.de,waz.de,wiesbadener-kurier.de,wiesbadener-tagblatt.de,wp.de,wr.de##.ad
 ! ##.ad-container
 stern.de,monopol-magazin.de,krone.at,cleverdialer.de,sueddeutsche.de,geo.de,northdata.de,losungencodycross.com,spieletipps.de,heise.de,netdoktor.de,aachener-zeitung.de,wissen.de##.ad-container
 ! ##.adsbygoogle
@@ -169,9 +172,37 @@ it-administrator.de,formel1.de,krautundrueben.de,motorsport-total.com,traktorpoo
 !
 ! NOTE: Specific rules
 !
+monsterdealz.de###sidebar-primary > div.box:has(> div.fixed-content-adsense)
+monsterdealz.de##.single-post-content > p:has(> a[rel="sponsored nofollow"])
+instyle.de,freundin.de##div[class^="paragraph-ad_placement"]
+macwelt.de,pcwelt.de#$#.wp-block-column:has(> .page-ad) { display: none !important; }
+macwelt.de,pcwelt.de#$#.wp-block-columns:has(> .wp-block-column > .page-ad) { grid-template-columns: unset !important; }
+regionalheute.de##.outerContainer aside:has(> div.printoff > div[id^="traffective-ad"])
+regionalheute.de##.outerContainer div[class^="boxspace"]:has(> div[id^="traffective-ad"])
+mtb-news.de##.js-replyNewMessageContainer > article[id^="fh-afp"]
+flugrevue.de##div[data-mps_adwrapper]
+||box.blick.ch/iframes/promoframe
+blick.ch##div:has(> iframe[src*="box.blick.ch/iframes/promoframe"]:only-child)
+box.blick.ch##div:has(> div[id*="-MR"])
+nordisch.info##aside.widget_custom_html:has(> .custom-html-widget > .as-sidebar > div[data-slot])
+defence-network.com##.defen-billboard-artikel
+hasepost.de##.hasepost-ad-slot
+freizeitmonster.de##div.transparency-classification:has(> div[id^="div-gpt-ad"])
+studyflix.de##.video-ad
+travelbook.de##.af-widget
+fupa.net##div[data-sentry-source-file="DistrictMainPage.tsx"] div[data-sentry-component="AdSlotContainer"]
+fupa.net#$##fupa-content > div[data-sentry-component="AdSlotContainer"] { height: 0 !important; }
+||teltarif.de/img/$script,domain=teltarif.de
+finanzen.net##.sponsored-area
+||mens-mental-health.de/wp-content/uploads/genderfrei_button.png
+rhein-zeitung.de##.row[data-upscore-zone] > .row > div[class^="col-"]:has(> .ad)
+abendzeitung-muenchen.de##.artikelinlinead
+muenchen.tv##.mediaLink > a[target="_blank"]
+muenchen.tv##.post-shortcuts > a:has(> .entry-wrapper > span > .zone-label)
+frankenpost.de##.brickgroup[data-upscore-zone="Magazine"]
+oberpfalzecho.de##.deluxe-rubrik-kombi
 runnersworld.de##div[data-static-banner]
 dmax.de##section:has(> div.carousel > div.swiper a[href*="bigpoint.com"])
-igorslab.de##.ilgha-scale-frame:has(.ilgha-related-similar)
 minecraft-serverlist.net##div[class^="adzone"]
 minecraft-serverlist.net###tabbody > tr:not([class]):has(> td > div[id^="nerdic_content_"])
 morgenpost.de##.article-body > aside:has(> iframe[src^="https://comparison.financeads.net"])
@@ -195,7 +226,7 @@ ligainsider.de##.feature_holder > .feature:has(> div[id^="ad-rectangle"])
 bluewin.ch##.c-left-container > .justify-center:has(> div.shell > div.c-ad-container)
 bluewin.ch##.c-right-container:has(> div.w-full > div.shell > div.c-ad-container)
 imagenetz.de##.ig-adbox
-hna.de##.wv_story_el_showHeroes
+tz.de,hna.de##.wv_story_el_showHeroes
 ohn.haendlerbund.de#$##mainAdsBannerSection { display: none !important; }
 ohn.haendlerbund.de#$#.modal-backdrop { display: none !important; }
 ohn.haendlerbund.de#$#body { overflow: auto !important; }
@@ -556,8 +587,7 @@ weser-kurier.de###msn-ads-top
 weser-kurier.de##.ad-sticky-footer-container-wk
 weser-kurier.de##section[data-contentport-name^="Werbung"]
 swp.de,lr-online.de###ms-edgeAd
-lr-online.de##.u-adSlot:not([class*="-sky-"])
-stuttgarter-zeitung.de,swp.de##.u-adSlot
+lr-online.de,stuttgarter-zeitung.de,swp.de##.u-adSlot
 saechsische.de##div[class^="recommendationstyled__"]
 volksstimme.de##div[id*="articlead-"]
 ||dl.volksstimme.de/tm/
@@ -570,7 +600,7 @@ nwzonline.de##.ad-sticky-footer-container-nwz
 moz.de##aside[data-ad-unit-large="d_billboard"]
 moz.de##aside[data-ad-unit-small]
 moz.de##.u-outbrain
-moz.de##.u-free-html:has(> #bluum)
+lr-online.de,swp.de,moz.de##.u-free-html:has(> #bluum)
 noz.de##.ad-sticky-footer
 noz.de##section[data-nozmhn-lab*="Advertorials"]
 noz.de##main > section.content--group:has(> div.ad_label)
@@ -810,9 +840,6 @@ babelli.de##.entry-content > .w-element-container:has(> .code-main:only-child > 
 babelli.de##.entry-content > .wp-block-columns:has(> .wp-block-column > .w-element-container > script[src="//syndication.target-video.com/native-player.js"])
 pff.de##.messageList > li:not([id^="post"])
 infranken.de##article:has( a[href^="/ratgeber/pi"])
-rlptoday.de,hessentoday.de##.advertBorder
-rlptoday.de##div[data-testid="native-ad"]
-rlptoday.de##div:has(> .storyElementWrapper__adSlot:only-child)
 express.de##.w-full > div[id^="desktop_"][class*="250px"]
 merkur.de##div[class^="id-TBeepSlot"]
 verkaufsoffener-sonntag.com##div[class^="g "]:has(> .g-single:only-child > :is(.ads-sticky-container, [id^="slot-sticky-"]))
@@ -1602,6 +1629,8 @@ augsburger-allgemeine.de##div[class="p-vlist p-vlist--stretch"] > a > img[width=
 augsburger-allgemeine.de##div[class="p-vlist p-vlist--stretch"] > div.p-width_third
 heidelberg24.de,extratipp.com,fr.de,hna.de,tz.de##.wv_story_el_billboard
 freiepresse.de###NAT4
+moviepilot.de##div[class^="sc-"]:not([id]):has(> div[id^="dfp-"]:only-child)
+moviepilot.de##div[class^="sc-"]:not([id]):has(> div[class^="sc-"]:not([id]):only-child > div[id^="dfp-"]:only-child)
 moviepilot.de###consumptions
 moviepilot.de###OUTBRAIN-TITLE
 freiepresse.de##.rgt
@@ -3074,8 +3103,8 @@ chip.de##.l-Downloads__Sidebar--TopShifter > .fb-cell-footer + div:not([class]):
 frauenzimmer.de##.adcontrol__overline
 diesparratgeber.de###detailviewadvert
 diesparratgeber.de###bigbanneradvertisment
-macuser.de,digital-eliteboard.com##.samCodeUnit
-digital-eliteboard.com##.samBannerUnit
+freiercafe.net,macuser.de,digital-eliteboard.com##.samCodeUnit
+freiercafe.net,digital-eliteboard.com##.samBannerUnit
 tagesspiegel.de##div[id^="iqadtile"]
 handelsblatt.com##div[data-teasertracking*="Advertisement"]
 stylebook.de,travelbook.de,techbook.de,fitbook.de##.ads__container
