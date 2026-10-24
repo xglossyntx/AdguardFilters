@@ -12,6 +12,8 @@
 !
 ! NOTE: Allow-list
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/244319
+@@||btvplus.bg/static/bg/shared/vjs/videojs-contrib-ads.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/51510
 !+ PLATFORM(windows, mac, android, cli)
 @@||mail.bg/message/$jsinject,elemhide,extension
@@ -20,6 +22,8 @@
 !
 ! NOTE: Anti-adblock
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/241203
+gledaitv.live###abort-overlay
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229499
 ||filmifen.com/templates/filmi/js/adb.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/216027
@@ -27,6 +31,7 @@
 @@||ads.poshtata.online/*.js$domain=seir-sanduk.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214657
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214602
+gledaitv.*,bg-gledai.*###abort-overlay
 @@||cdn.gledaitv.*/embed.php$generichide
 @@||cdn.bg-gledai.*/embed.php$generichide
 cdn.gledaitv.*,cdn.bg-gledai.*#%#//scriptlet('abort-on-stack-trace', 'document.querySelector', 'Modal')
@@ -82,11 +87,6 @@ pik.bg#%#//scriptlet('prevent-element-src-loading', 'script', 'ima3.js')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/159344
 @@||vivo.bg/gpt.js
 money.bg,webcafe.bg,topsport.bg#%#//scriptlet('set-constant', 'isuBlock', 'false')
-! https://github.com/AdguardTeam/AdguardFilters/issues/157410
-gledaitv.live##div[id^="anti-adblock-"]
-gledaitv.live###abDetectorModal
-gledaitv.live#%#//scriptlet('prevent-setTimeout', 'advertisement')
-gledaitv.live#%#//scriptlet('set-constant', 'ABDetector', 'noopFunc')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/170783
 ||cdn.bg-gledai.*/fuck_
 /rotate.php?id=$script,domain=bg-gledai.*
