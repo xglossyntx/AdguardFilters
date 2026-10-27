@@ -8,6 +8,14 @@
 ! Genegic rules
 ! SECTION: Subscriptions - Generic
 !
+##.sharebarBeta-googlePreferredSource-container
+##.cta-component-full-width
+##.cta-component-half-width
+###po-inline-article-above
+###po-overlay-banner-bottom-fullwidth
+###po-inline-article-above
+##.send-us-your-news-cta
+##.id-Story-googleFollowButton
 ##a[href^="https://yandex.ru/news/?favid="]
 ##.google-preferred-source
 ##.article__info-goog
@@ -52,6 +60,9 @@
 ###savetherecipe
 ##.save-recipe
 ##.seva-overlay
+!
+! Reach plc
+##section[data-testid="inline-google-preferred-source-ncu"]
 !
 /wp-content/plugins/mailoptin/*
 !
