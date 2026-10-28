@@ -44,7 +44,7 @@ ya.ru,yandex.*#$?#div[class^="ImagesViewer-"][style^="height:"] { remove: true; 
 yandex.ru##.premium-banner-content-view
 yandex.*##.map-container ~ div.app div.business-card-overview-tab-view__content ._type_middle > div:not(._hidden)
 yandex.*##.map-container ~ div.app div.business-card-overview-tab-view__shrink > div._type_bottom > div:not(._hidden)
-yandex.*##.map-container ~ div.app div.business-card-view__main-wrapper > div._type_upper > div:not(._hidden)
+yandex.*##.map-container ~ div.app div[class] > div._type_upper > div:not(._hidden)
 ya.ru,yandex.*##.sidebar-container div[id*="R-I-"]
 [$path=/\/(maps|navi|web-maps)/]ya.ru,yandex.*#%#//scriptlet('set-constant', 'Object.prototype.isStickyAd', 'undefined')
 !
@@ -115,6 +115,7 @@ ya.ru,yandex.*##ul[id] > li:has(> div.Organic > div.Organic-Subtitle > div.Organ
 ya.ru,yandex.*##ul[id] > li[class*="Organic"]:has(> div.Root a[href*="_crpd"] > div.Organic-OfferThumbWrap)
 ya.ru,yandex.*##ul[id] > li:has(> div.Root_inited > div[class*="Organic"] > div[class$="-Header"] > h2 + div > span)
 ! the ad is on the right side, which is mostly non-reproducible
+ya.ru,yandex.*##div[id^="advRsyaReact_"]
 [$path=/search]ya.ru,yandex.*#%#//scriptlet('remove-node-text', 'script', '/^window\.Ya.*pcodeParams.*renderTo/')
 ! In the feed
 ya.ru##.feed > div > ul > li.feed__item:has(div[id*="R-I-"])
@@ -278,12 +279,14 @@ mail.ru#?#body > div > style + div:has(> div > div.description:contains(/До[б
 news.mail.ru#?#body > div:has(> div[id] > div > div.title:contains(блокировщика рекламы))
 ! dzen.ru
 ! Main page
+dzen.ru##article > div[data-allowed-click="true"][class^="dzen-desktop--"]
 dzen.ru#%#//scriptlet('abort-on-property-write', '__pcodeAllActiveTestIds')
 dzen.ru##div[class^="dzen-desktop--news-right-desktop-"]:has(> div > div:empty)
 dzen.ru#%#//scriptlet('set-constant', 'Object.prototype.initAdvManager', 'undefined')
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__root-"] > div > div[data-appid^="dzen-desktop@"] div + div > div[style*="padding-top:"][style*="position:"]
 dzen.ru##div[aria-label="Лента Дзена"] article:has(> div[data-ad-type="direct"])
 ! articles
+dzen.ru##div[class*="content--article__isHorizontalOrientation-"] > div[class*="__wideContent-"] > div > div[class*="Placeholder-"]
 [$path=/a]dzen.ru#%#//scriptlet('set-constant', 'Object.prototype.rtb', 'undefined')
 [$path=/a]dzen.ru##div[class*="bottomAdUnderComments-"]
 [$path=/a]dzen.ru##div[class*="ad-block__placeholder"]
@@ -307,8 +310,7 @@ dzen.ru#$?##LayoutTopMicroRoot div[style^="padding-top:"][style*="position: rela
 ! https://m.dzen.ru/articles
 m.dzen.ru##div[class^="desktop2--redesign-feed__"] div:has(> article[class*="--card-rtb__"])
 ! Ads in the feed
-dzen.ru##div[class^="dzen-desktop--"][class*="__topContent-"] > div[class^="dzen-desktop--top-sidebar-desktop-"] > article[style]
-dzen.ru##div[class^="dzen-desktop--feed__itemWrap-"] div[class^="dzen-desktop--"][class*="__cardWrapper-"] ~ article:has([class*="__adBox-"])
+dzen.ru###ArticleFeedMicroApp div[class*="--base__"] > div:has(> article[class][style] > div[data-allowed-click])
 m.dzen.ru##div[aria-label="Лента Дзена"] div + article[class*="--card-rtb__"]
 ! Sportsdzen
 sportsdzen.ru##div[class*="sports-button-ad"]
@@ -643,28 +645,28 @@ fosspost.org,portalvirtualreality.ru,pingvin.pro,bonobono.com,curbsideclassic.co
 ! SECTION: Anti-adblock - Freestar Recovered
 #$#body > div.ad.banner-ad.ad-siderail.stickyads[data-freestar-ad][style]:not(#style_important) { display: block !important; }
 ||a.pub.network/core/prebid-universal-creative.js$script,redirect=noopjs
-||googletagservices.com/tag/js/gpt.js$script,redirect=noopjs,domain=hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net
+||googletagservices.com/tag/js/gpt.js$script,redirect=noopjs,domain=hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net|online-python.com|forums.hfboards.com|latribuna.hn|flightsim.to|vsco.co
 ! In the case if DNS filtering is enabled
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com#%#//scriptlet('prevent-setTimeout', '/new Promise[\s\S]*?"throw"[\s\S]*?void 0/')
-flightaware.com,boingboing.net,emojipedia.org#%#//scriptlet('trusted-suppress-native-method', 'sessionStorage.getItem', '"fs.adb"')
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,flightaware.com,boingboing.net,chosic.com,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#//scriptlet('prevent-element-src-loading', 'script', 'a.pub.network')
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,boingboing.net,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#//scriptlet('abort-current-inline-script', 'Uint8Array', 'getAndSetOverlay')
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com#%#//scriptlet('prevent-setTimeout', '/new Promise[\s\S]*?"throw"[\s\S]*?void 0/')
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,flightaware.com,boingboing.net,emojipedia.org#%#//scriptlet('trusted-suppress-native-method', 'sessionStorage.getItem', '"fs.adb"')
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,flightaware.com,boingboing.net,chosic.com,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#//scriptlet('prevent-element-src-loading', 'script', 'a.pub.network')
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,boingboing.net,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#//scriptlet('abort-current-inline-script', 'Uint8Array', 'getAndSetOverlay')
 ! TODO: remove rules with "TrustedScriptURL" when this issues will be fixed - https://github.com/AdguardTeam/Scriptlets/issues/514
 !+ PLATFORM(windows, mac, android, cli)
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,flightaware.com,boingboing.net,chosic.com,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#(()=>{void 0===window.TrustedScriptURL&&(window.TrustedScriptURL=()=>{});})();
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,flightaware.com,boingboing.net,chosic.com,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#(()=>{void 0===window.TrustedScriptURL&&(window.TrustedScriptURL=()=>{});})();
 !+ PLATFORM(ext_ff)
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,flightaware.com,boingboing.net,chosic.com,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{void 0===window.TrustedScriptURL&&(window.TrustedScriptURL=()=>{});})();')
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,flightaware.com,boingboing.net,chosic.com,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{void 0===window.TrustedScriptURL&&(window.TrustedScriptURL=()=>{});})();')
 !#if (adguard_app_ios || adguard_ext_android_cb || adguard_ext_safari)
 !#safari_cb_affinity(general,privacy)
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.banner-ad-container
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.banner-ad
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.banner-adv
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.ad-siderail
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@$#body > div.ad.banner-ad.ad-siderail.stickyads[data-freestar-ad][style]:not(#style_important) { display: block !important; }
-neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.stickyads:not([style^="width: 32px"], [style^="width: 33px"], [style*="left: -43px"], [style*="-3"][style*="important"][style*="display: block;"], [style*="position: fixed"][style*="-188"], [style*="!important;"][style*="width:"][style*="height:"][style*="position"][style*="left:"][style*="top:"][style*="display"], [data-freestar-ad="123"]):not(:empty)
-@@||a.pub.network/core/prebid-universal-creative.js$domain=globe.adsbexchange.com|hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net
-@@||googletagservices.com/tag/js/gpt.js$domain=globe.adsbexchange.com|hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net
-@@||a.pub.network/core/imgs/1.png$domain=globe.adsbexchange.com|hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.banner-ad-container
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.banner-ad
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.banner-adv
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.ad-siderail
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@$#body > div.ad.banner-ad.ad-siderail.stickyads[data-freestar-ad][style]:not(#style_important) { display: block !important; }
+vsco.co,flightsim.to,latribuna.hn,forums.hfboards.com,online-python.com,neowin.net,globe.adsbexchange.com,box.live,aerowitter.com,aerolla.net,wenxuecity.com,newrepublic.com,fragrantica.*,pc-builds.com,flightaware.com,boingboing.net,emojipedia.org,camelcamelcamel.com,adsoftheworld.com,flightconnections.com,smithsonianmag.com,thenation.com,lse.co.uk,knowt.com,gamerescape.com,myabandonware.com,androidheadlines.com,phoronix.com,virtualpiano.net,creaders.net,baeldung.com,titantv.com,thisisanfield.com,mouse-sensitivity.com,hostednovel.com,getemoji.com,concertarchives.org#@#.stickyads:not([style^="width: 32px"], [style^="width: 33px"], [style*="left: -43px"], [style*="-3"][style*="important"][style*="display: block;"], [style*="position: fixed"][style*="-188"], [style*="!important;"][style*="width:"][style*="height:"][style*="position"][style*="left:"][style*="top:"][style*="display"], [data-freestar-ad="123"]):not(:empty)
+@@||a.pub.network/core/prebid-universal-creative.js$domain=globe.adsbexchange.com|hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net|online-python.com|forums.hfboards.com|latribuna.hn|flightsim.to|vsco.co
+@@||googletagservices.com/tag/js/gpt.js$domain=globe.adsbexchange.com|hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net|online-python.com|forums.hfboards.com|latribuna.hn|flightsim.to|vsco.co
+@@||a.pub.network/core/imgs/1.png$domain=globe.adsbexchange.com|hostednovel.com|getemoji.com|concertarchives.org|mouse-sensitivity.com|thisisanfield.com|titantv.com|baeldung.com|creaders.net|virtualpiano.net|phoronix.com|androidheadlines.com|myabandonware.com|gamerescape.com|knowt.com|lse.co.uk|thenation.com|smithsonianmag.com|flightconnections.com|adsoftheworld.com|camelcamelcamel.com|emojipedia.org|boingboing.net|flightaware.com|pc-builds.com|fragrantica.*|newrepublic.com|wenxuecity.com|aerowitter.com|aerolla.net|box.live|neowin.net|online-python.com|forums.hfboards.com|latribuna.hn|flightsim.to|vsco.co
 !#safari_cb_affinity
 !#endif
 ! If the script in a separate file
@@ -704,6 +706,13 @@ scitechdaily.com,thewindowsclub.com#@#.ad-space
 @@||search-module.s3.us-east-2.amazonaws.com/pubs/trib/adblockdetect.js
 !#safari_cb_affinity
 !
+! upScore
+!#safari_cb_affinity(general)
+telepolis.de#%#//scriptlet('set-constant', 'upScore.data.adblock', '0')
+telepolis.de#@#.ad-unit:not(.textads)
+telepolis.de#@#.ad
+!#safari_cb_affinity
+!
 ! NOTE: Australian Community Media
 armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwesterndaily.com.au,crookwellgazette.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,portnews.com.au,thecourier.com.au,thesenior.com.au#%#//scriptlet('set-cookie', 'dismissCheck', '1')
 !
@@ -713,6 +722,31 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! The rules for content blockers only:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#content_blockers
 !
+miniwebtool.com#%#//scriptlet('prevent-setTimeout', 'isLikelyBlocked')
+portel.pl###wrapper > div[id][style]:has(> a[href="/info-block"])
+portel.pl#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
+ftbucket.info###adblock-banner
+tftacademy.com##div[class="relative"][style="width: 160px; height: 600px;"]
+padovaoggi.it#%#//scriptlet('set-constant', '__unfair', 'true')
+lofi-nopixel.com#%#//scriptlet('abort-on-property-read', 'nitroAds')
+||mangatek.com/_astro/AdblockDetector.
+||urlrating.com/rainbow/master-js
+galactictec.com,seomaking.com,h-supertools.us,theseotools.net,seotoolslite.com,seosystem.net,seospro.com,seoboxpro.com,webto.in,hashdigitaltools.com,prozed.com,prozed.com###xdBox
+galactictec.com,seomaking.com,h-supertools.us,theseotools.net,seotoolslite.com,seosystem.net,seospro.com,seoboxpro.com,webto.in,hashdigitaltools.com,prozed.com,prozed.com##.modal-backdrop
+bolognatoday.it#%#//scriptlet('prevent-setTimeout', 'adblock')
+igorslab.de##.ilab-adblocker-notice
+komiku.org#$##ab-overlay { display: none !important; }
+komiku.org#$#body { overflow: auto !important; }
+kongregate.com##body > div[class][style]:has(> div[class][style] > img[src$="warning_amber_24dp.png"])
+ipsw.dev##.fc-ab-root
+polytranslator.com#%#//scriptlet('prevent-addEventListener', 'np.detect')
+mgsm.pl#%#//scriptlet('prevent-setTimeout', 'AdBlock', '2000')
+colnect.com###pageContent > div[style^="position: fixed; left: 0px;"][style*="z-index: 12000;"]:has(> div[style] > a[href*="/help/collecting/premium_join"])
+meteoservice.ru###page-error-msg
+nexusmangas.com#%#//scriptlet('prevent-setTimeout', '/\(\)=>\{.{1,5}\.then\(.{1,5}=>\{.{1,5}\|\|.{1,5}\}\)\}/')
+nexusmangas.com#%#//scriptlet('trusted-set-local-storage-item', 'nexus.adblock-notice.dismissed-until', '9999999999999')
+footmercato.net#%#//scriptlet('set-session-storage-item', 'countPageSeen', '$remove$')
+vaughn.live#%#//scriptlet('trusted-set-local-storage-item', 'vs_notice_last_shown_8', '$now$')
 cyberscore.live##.modal-partner-rb-wrapper
 cyberscore.live##.border:has(> img.partner-rb:first-child + div:last-child)
 cyberscore.live##.border:has(> .text-center[data-nosnippet]:only-child > .font-bold:only-child)
@@ -760,7 +794,6 @@ the-sun.com#%#//scriptlet('prevent-setTimeout', 'gu(gh)')
 ip.sb##.wwads_abp
 jetpunk.com#%#//scriptlet('prevent-setTimeout', 'isAdblocker')
 ricardocuisine.com#%#//scriptlet('set-cookie', 'adblock-modal.ads', '1')
-vaughn.live#%#//scriptlet('trusted-set-local-storage-item', 'vs_notice_last_shown2', '99999999999999')
 thestar.com.my##.widgettop
 sport-express.ru##.se-bn2-notice
 gsmarena.com#$#html > body { overflow: auto !important; }
@@ -957,7 +990,6 @@ plantmaps.com#%#//scriptlet('prevent-setTimeout', '.offsetWidth&&0==')
 bgsi.gg#%#//scriptlet('prevent-setTimeout', 'fired')
 bgsi.gg##body > div[style*="backdrop-filter"]:not([id])
 yummy-anime.ru##div[class^="adfinity_"]
-iphoned.nl##.adblock-detect
 abconsent.com,account.sirdata.io#%#//scriptlet('prevent-fetch', 'doubleclick.net')
 elektroda.de,elektroda.com,elektroda.pl#%#//scriptlet('prevent-setTimeout', '/adBlockElement|&&0!==htmlDivElement\.offsetHeight/')
 apps.dirittopratico.it##div[class^="apprise"]
@@ -1758,8 +1790,6 @@ mgsm.pl#%#//scriptlet("set-constant", "checkAdblockBait", "noopFunc")
 milehighreport.com##div[class^="adblock-whitelist-messaging"]
 minhaoperadora.com.br##.minha-target[data-advadstrackbid]
 minijuegos.com#%#//scriptlet("set-constant", "MP.lib.adBlockEnabled", "noopFunc")
-miniwebtool.com###blocknotice
-miniwebtool.com#%#//scriptlet("set-constant", "adBlockEnabled", "false")
 mir74.ru###adblock_top_reminder
 mirror.co.uk###bottom-article-prompt
 thehindu.com,mirror.co.uk##.tp-container-inner
@@ -1840,7 +1870,10 @@ pastedownload.com##.hemmm
 pastedownload.com##.jegulo
 pastedownload.com##.aadb-overlay
 pastedownload.com###fc-main-dialog
+pastedownload.com###pdq-main-dialog
 pastedownload.com#%#//scriptlet('prevent-setTimeout', 'this.run()')
+pastedownload.com#%#//scriptlet('prevent-setInterval', 'ExoSupport')
+pastedownload.com#%#//scriptlet('set-constant', '__aadb_trigger', 'noopFunc')
 pastedownload.com#%#//scriptlet('prevent-element-src-loading', 'script', 'adskeeper.com')
 ||pastedownload.com/template/nova/js/okagame.js
 pastenow.ru###google-block
@@ -2319,6 +2352,11 @@ socialblade.com##div[style^="width: px; height: 250px;"]
 creativeuncut.com###abox-s_i
 creativeuncut.com###g_abox
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/244734
+fenixplay.xyz#%#//scriptlet('set-constant', 'FENIX_ADBLOCK_MODE', 'undefined')
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||fenixplay.xyz/player/*.js?cb=$domain=fenixplay.xyz|anitube.in.ua
+!
 ! https://github.com/AdguardTeam/AdguardFilters/issues/237040
 toolskitpro.net#%#//scriptlet('prevent-setTimeout', 'ad_blocker')
 !+ PLATFORM(ios, ext_safari, ext_android_cb)
@@ -2451,7 +2489,7 @@ fotpforums.com#@#ins.adsbygoogle[data-ad-client]
 @@||titulky.com/aclib.js
 on4t.com#@#.google-ad
 @@||s.nitropay.com/1.gif$domain=diablo.trade
-plantmaps.com#@#.ad-unit:not(.textads)
+nexusmangas.com,plantmaps.com#@#.ad-unit:not(.textads)
 vide-greniers.org#@#ins.adsbygoogle[data-ad-slot]
 vide-greniers.org#@#ins.adsbygoogle[data-ad-client]
 @@||iphoned.nl/wp-content/themes/bigspark/scripts/ads-frontend.min.js
@@ -2611,7 +2649,6 @@ slate.com#@#.ad-container
 symbolab.com#@#.googleAdsense
 t-hsn.com#@#.ad-head
 t-hsn.com#@#.ad-top
-thecrimson.com,t3n.de#@##adsbox
 textstudio.co#@#.adsbyyahoo
 theglobeandmail.com#@#.c-ad
 vice.com#@#.ad-placement
@@ -3151,6 +3188,15 @@ forbes.com#@#.AD300Block
 forbes.com#@#.AD-label300x250
 forbes.com#@#.AD-Rotate
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/241413
+!#if (adguard_ext_safari || adguard_app_ios || adguard_ext_android_cb)
+!#safari_cb_affinity(general,privacy)
+@@||boot.pbstck.com/*/adm/$domain=vaughn.live
+@@||cdn-adm.pbstck.com^$domain=vaughn.live
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=vaughn.live
+!#safari_cb_affinity
+!#endif
+!
 ! https://github.com/AdguardTeam/AdguardFilters/issues/79903
 offertoro.com#@#.ads
 offertoro.com#@#.ad
@@ -3399,9 +3445,9 @@ polzadom.ru#%#//scriptlet("abort-current-inline-script", "document.getElementByI
 !#safari_cb_affinity(general)
 @@||d2ujtyf7wfmq6y.cloudfront.net/ads/ads.html$domain=reisefrage.net|motorradfrage.net|autofrage.net|sportlerfrage.net|gesundheitsfrage.net|finanzfrage.net|computerfrage.net|gutefrage.net
 ! #@#.full_AD
-echo-online.de,ka-news.de,insideevs.de,de.motor1.com,rlptoday.de,news.de,mainpost.de,aufderbuehne.de,trainingsworld.com,zaubertopf.de,maclife.de,kuechengoetter.de,survivethis.news,prad.de,infranken.de,nachrichten.at,moviejones.de,np-coburg.de,frankenpost.de,insuedthueringen.de,augsburger-allgemeine.de,4fansites.de,general-anzeiger-bonn.de,kurier.de,knuddels.de,fumsmagazin.de,reisefrage.net,motorradfrage.net,autofrage.net,sportlerfrage.net,gesundheitsfrage.net,finanzfrage.net,wer-weiss-was.de,spielfilm.de,jappy.com,serienjunkies.de,woxikon.de,wize.life,computerfrage.net,gutefrage.net,teckbote.de,ligainsider.de,woxikon.de,rp-online.de,frag-mutti.de,ksta.de,sol.de,noz.de,mopo.de,express.de,berliner-kurier.de,berliner-zeitung.de#@#.full_AD
+echo-online.de,ka-news.de,insideevs.de,de.motor1.com,news.de,mainpost.de,aufderbuehne.de,trainingsworld.com,zaubertopf.de,maclife.de,kuechengoetter.de,survivethis.news,prad.de,infranken.de,nachrichten.at,moviejones.de,np-coburg.de,frankenpost.de,insuedthueringen.de,augsburger-allgemeine.de,4fansites.de,general-anzeiger-bonn.de,kurier.de,knuddels.de,fumsmagazin.de,reisefrage.net,motorradfrage.net,autofrage.net,sportlerfrage.net,gesundheitsfrage.net,finanzfrage.net,wer-weiss-was.de,spielfilm.de,jappy.com,serienjunkies.de,woxikon.de,wize.life,computerfrage.net,gutefrage.net,teckbote.de,ligainsider.de,woxikon.de,rp-online.de,frag-mutti.de,ksta.de,sol.de,noz.de,mopo.de,express.de,berliner-kurier.de,berliner-zeitung.de#@#.full_AD
 ! #@#.banner_ad_full
-echo-online.de#@#.banner_ad_full
+kurier.de,frankenpost.de,echo-online.de#@#.banner_ad_full
 ! #@#.full_ad
 ! #@#.banner_ad
 !#safari_cb_affinity
@@ -3575,6 +3621,29 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !#if (adguard_ext_safari || adguard_app_ios || adguard_ext_android_cb)
 !#safari_cb_affinity(general)
 !
+miniwebtool.com#@#.adslot
+miniwebtool.com#@#.ad_unit
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=miniwebtool.com
+@@||cdn.fuseplatform.net/publift/tags/*/fuse.js$xmlhttprequest,domain=miniwebtool.com
+@@||s.nitropay.com/*.gif?*&adslot=$domain=lofi-nopixel.com
+bolognatoday.it#@#.ad-unit:not(.textads)
+bolognatoday.it#@##ad_banner
+bolognatoday.it#@#div[id^="div-gpt-"]
+bolognatoday.it#@##ad-top
+bolognatoday.it#@#.ad-slot
+bolognatoday.it#@#.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
+bolognatoday.it#@#.ad-leaderboard
+bolognatoday.it#@#.advertisement:not(html,body,:empty,[class~=ads])
+bolognatoday.it#@#.sponsored-ad
+bolognatoday.it#@#[id^="aswift_"]
+bolognatoday.it#@#[id^="google_ads_iframe_"]
+bolognatoday.it#@#[id^="div-gpt-ad"]
+mgsm.pl#@#[class^="ad-"]
+mgsm.pl#@#div[id^="div-gpt-"]
+mgsm.pl#@#[class^="advertisement"]
+mgsm.pl#@#div[id^="div-gpt-"]
+mgsm.pl#@#[id^="div-gpt-ad"]
+mgsm.pl#@#.ad-placement
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=pagesix.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=pagesix.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=nypost.com
