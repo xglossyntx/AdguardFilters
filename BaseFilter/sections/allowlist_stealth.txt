@@ -318,7 +318,7 @@
 @@||ataide0.pingbash.com/$stealth=referrer,domain=roxiestreams.su
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244851
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234791
-@@||imgbb.*/ib/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|new1.vegamovies.lease|rogmovies.cv|xprimehub.bond
+@@||imgbb.*/ib/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|vegamovies.lease|rogmovies.cv|xprimehub.bond
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234673
 @@||account.deezer.com/$stealth=flash
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234641
@@ -1455,7 +1455,7 @@
 @@*.mp4?$media,stealth=referrer,domain=vidtube.pro
 @@||vidtube.pro/embed$subdocument,stealth=referrer
 ! https://github.com/AdguardTeam/AdguardFilters/issues/181315
-@@embed/$stealth=webrtc,domain=vipbox.fm
+@@embed/$stealth=webrtc,domain=vipbox.ga
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229703
 ! https://github.com/AdguardTeam/AdguardFilters/issues/181992#issuecomment-2188273314
 @@||hdmomplayer.com/embed/$domain=dizimom.*|filmbip.com,stealth=referrer
