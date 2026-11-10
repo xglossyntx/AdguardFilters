@@ -273,7 +273,6 @@ cdn.braun634.com^$third-party
 @@||famfonts.com^$generichide
 @@||jpopsingles.eu^$generichide
 @@||getpczone.com^$generichide
-@@||myviptuto.com^$generichide
 @@||8tm.net^$generichide
 @@||androidtunado.com.br^$generichide
 @@||gpucheck.com^$generichide
@@ -309,7 +308,6 @@ cdn.braun634.com^$third-party
 @@||raphsonbd.com^$generichide
 @@||unity3diy.blogspot.com^$generichide
 @@||vviruslove.com^$generichide
-@@||shrinkurl.org^$generichide
 @@||yannik.biz^$generichide
 @@||anonymous-links.com^$generichide
 @@||series-streaminghd.com^$generichide
@@ -783,7 +781,6 @@ king-shoot.tv#@##ads_top
 @@||getlec.blogspot.com^$generichide
 @@||grafixfather.com^$generichide
 @@||gtoys.blog.fc2.com^$generichide
-@@||hdbox.ws^$generichide
 @@||i8086.de^$generichide
 @@||itdmusic.com^$generichide
 @@||jagobd.com^$generichide
@@ -1429,8 +1426,6 @@ canadapolicereport.ca##.adsbygoogle
 @@||leakite.com^$generichide
 @@||contextual.media.net/dmedianet.js$domain=leakite.com
 @@||cdn.shortpixel.ai/*.leakite.com/wp-content/plugins/ad-inserter/images/ads.png$domain=leakite.com
-! https://github.com/AdguardTeam/AdguardFilters/issues/56572
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=myviptuto.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/55724
 @@||hqq.tv/js/adv/ads.js
 @@||hqq.tv/js/adv/fuckadblock.js
@@ -1649,8 +1644,6 @@ yusepjaelani.blogspot.com#@##adcontent
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=basicweb.ru
 ! https://github.com/AdguardTeam/AdguardFilters/issues/44066
 @@||rcsobjects.it/rcs_data-tracking/v*/distro/openx/gazzetta/openx_async.js$domain=gazzetta.it
-! https://github.com/AdguardTeam/AdguardFilters/issues/44070
-t3n.de#@##adsbox
 ! https://github.com/AdguardTeam/AdguardFilters/issues/43640
 @@||pornxxx.tv/ads.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/43231
@@ -2319,6 +2312,7 @@ opensubtitles.org###fcnbox
 @@||cdn.syndication.twimg.com/tweets.json
 !#safari_cb_affinity
 ! fix showjet.ru player on myshows.me
+myshows.me##.adblock
 @@||myshows.me^$generichide
 myshows.me##.adsbygoogle
 @@||showjet.ru/css/ads-custom.css$domain=myshows.me
