@@ -42,7 +42,7 @@
 ! log.rlsbb.in - Search not showing anything
 @@||log.rlsbb.in^$stealth=ip
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244926
-@@||speedwebgo.com^$stealth=referrer,domain=blacktoon426.com
+@@||speedwebgo.com^$stealth=referrer,domain=blacktoon428.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/245108
 @@||toho-one.com^$stealth=referrer,domain=toho-one.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244510
@@ -318,7 +318,7 @@
 @@||ataide0.pingbash.com/$stealth=referrer,domain=roxiestreams.su
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244851
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234791
-@@||imgbb.*/ib/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|new1.vegamovies.lease|rogmovies.cv|xprimehub.bond
+@@||imgbb.*/ib/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|vegamovies.lease|rogmovies.cv|xprimehub.bond
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234673
 @@||account.deezer.com/$stealth=flash
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234641
@@ -1455,7 +1455,7 @@
 @@*.mp4?$media,stealth=referrer,domain=vidtube.pro
 @@||vidtube.pro/embed$subdocument,stealth=referrer
 ! https://github.com/AdguardTeam/AdguardFilters/issues/181315
-@@embed/$stealth=webrtc,domain=vipbox.fm
+@@embed/$stealth=webrtc,domain=vipbox.ga
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229703
 ! https://github.com/AdguardTeam/AdguardFilters/issues/181992#issuecomment-2188273314
 @@||hdmomplayer.com/embed/$domain=dizimom.*|filmbip.com,stealth=referrer
@@ -2766,8 +2766,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/239334
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78051
 @@/wiki.php?player=$third-party,subdocument,stealth=referrer,domain=wikisport.info
-@@/e/*$third-party,subdocument,stealth=referrer,domain=thedaddy.pk
-@@.php?id=$third-party,subdocument,stealth=referrer,domain=thedaddy.pk
+@@/e/*$third-party,subdocument,stealth=referrer,domain=thedaddy.li
+@@.php?id=$third-party,subdocument,stealth=referrer,domain=thedaddy.li
 @@/embed/*$subdocument,stealth=referrer,domain=strims.*|daddyhd.com|daddylive.*
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78197
 !+ NOT_OPTIMIZED
