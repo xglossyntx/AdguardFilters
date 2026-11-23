@@ -24,6 +24,12 @@
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
 !
+/e/*^ip=*^beacon=
+/wp-content/plugins/advanced-ads-tracking/*
+/static/js/tracker.js^
+/api/eventTracking/batchReport.json
+/api/videos/*/embed/view|$xmlhttprequest
+/api/videos/*/embed/heartbeat|$xmlhttprequest
 .io/yndx^
 /jc/gtm.js
 /static/modules/js/AssertiveYield/*
@@ -156,7 +162,7 @@
 /impr-trck?
 /prgr-trk?
 ! Umami
-||umami.
+||umami.$domain=~umami.is|~umami.recipes
 ! Geo Targetly
 .co/gr?id=
 ! Rybbit
@@ -372,7 +378,7 @@
 /utx?tid=
 /census/RecordHit
 /dwanalytics-
-/cdn-cgi/zaraz/*
+/cdn-cgi/zaraz/*$domain=~abuse.cloudflare.com
 /beacon/error?
 /i?e=pv&url=
 /partner_tracking_min.js
@@ -473,7 +479,8 @@
 /astrack.js
 /gv-analytics/*
 /gapro.js
-/duracelltomi-google-tag-manager/*$script
+/analytics-talk-content-tracking.
+/gtm4wp-$script
 /img.gif?
 /mtracking.
 /sr.gif?
